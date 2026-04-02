@@ -1,0 +1,42 @@
+nome_via,tipo_via,highway_tag,osm_way_id,lat_ref,lon_ref,contém_urbanova_no_nome,fonte
+Avenida Danilo Stanzani,avenida,tertiary,313154892,-23.188819,-45.9332177,nao,osm_overpass
+Avenida Lineu de Moura,avenida,primary,74838313,-23.1955172,-45.9320698,nao,osm_overpass
+Avenida Possidônio José de Freitas,avenida,tertiary,1146955300,-23.1903943,-45.933106,nao,osm_overpass
+Avenida Shishima Hifumi,avenida,tertiary,74887581,-23.2029765,-45.9398864,nao,osm_overpass
+Extensão Ciclovia urbanova,logradouro,cycleway,1251200858,-23.1954105,-45.931593,sim,osm_overpass
+Ponte Flamínio Vaz de Lima,logradouro,primary,160698890,-23.1959294,-45.9298751,nao,osm_overpass
+Rua Afonsina Pelóia Simão,rua,residential,129962653,-23.1921016,-45.9364584,nao,osm_overpass
+Rua Ângela Maria Carvalho Faria Basílio,rua,residential,130057750,-23.1953105,-45.9376404,nao,osm_overpass
+Rua Antonia Amaral Mello,rua,residential,130059479,-23.2007278,-45.9406788,nao,osm_overpass
+Rua Antônio Francisco do Nascimento,rua,residential,129961921,-23.1934118,-45.9331407,nao,osm_overpass
+Rua Arnaldo Pinto Pereira,rua,residential,130059492,-23.2001559,-45.9372497,nao,osm_overpass
+Rua Benedito Elías Guedes,rua,residential,130058028,-23.1945673,-45.9363477,nao,osm_overpass
+Rua Benedito M. de Figueiredo,rua,residential,335962682,-23.1907384,-45.9327364,nao,osm_overpass
+Rua Benedito Pinotti,rua,residential,130059471,-23.2028664,-45.940059,nao,osm_overpass
+Rua Conego Ruy Amaral,rua,residential,130059477,-23.2011896,-45.9409917,nao,osm_overpass
+Rua Cônego Ruy Amaral Mello,rua,residential,670116946,-23.2017758,-45.9403771,nao,osm_overpass
+Rua Diogo Pinto da Cunha,rua,residential,130058027,-23.1959906,-45.9366133,nao,osm_overpass
+Rua Dorival Domingos da Silva,rua,residential,129961922,-23.1938929,-45.9336509,nao,osm_overpass
+Rua Evandro Tuy Júnior,rua,residential,130059503,-23.1973638,-45.9368338,nao,osm_overpass
+Rua Francisco J S Coelho,rua,residential,129964525,-23.1934121,-45.9318306,nao,osm_overpass
+Rua Heli Adilson de Oliveira,rua,residential,130057748,-23.1964301,-45.9396671,nao,osm_overpass
+Rua Hélio Chaves Monteiro,rua,residential,417027274,-23.196914,-45.9334836,nao,osm_overpass
+Rua João Carlos de Oliveira,rua,residential,130059505,-23.1972609,-45.9353036,nao,osm_overpass
+Rua João Steiner,rua,residential,130059485,-23.1999151,-45.9398811,nao,osm_overpass
+Rua Joaquim Borges,rua,residential,129961923,-23.1947609,-45.9334296,nao,osm_overpass
+Rua Luiz Barbosa,rua,residential,130057749,-23.1985096,-45.9400979,nao,osm_overpass
+Rua Marcos Salgada de Araújo,rua,residential,130059507,-23.1970832,-45.9363384,nao,osm_overpass
+Rua Maria Aparecida de Farias,rua,residential,130059482,-23.1999151,-45.9398811,nao,osm_overpass
+Rua Maria da C Chaves Monteiro,rua,residential,129961919,-23.2007268,-45.9360265,nao,osm_overpass
+Rua Nacim Anis Mimessi,rua,residential,130057746,-23.1982214,-45.9421635,nao,osm_overpass
+Rua Norival Russiano Vieira,rua,residential,129961925,-23.195891,-45.9340867,nao,osm_overpass
+Rua Onofre do Prado,rua,residential,130059499,-23.1982192,-45.9375543,nao,osm_overpass
+Rua Professor João Bernardo da Silva,rua,residential,130059500,-23.1977159,-45.9372616,nao,osm_overpass
+Rua Rosa Barbieri Paiotti,rua,residential,130058030,-23.197086,-45.9421943,nao,osm_overpass
+Rua Rui Sérgio Rodrigues de Moura,rua,residential,130058031,-23.1930767,-45.9341864,nao,osm_overpass
+Rua Severino A de Oliveira,rua,residential,129961924,-23.1953221,-45.9338054,nao,osm_overpass
+Rua Tânia Maria de Carvalho,rua,residential,130057745,-23.1967097,-45.9423866,nao,osm_overpass
+Rua Tânia Maria de Carvalho,rua,tertiary_link,845969073,-23.1967097,-45.9423866,nao,osm_overpass
+Rua Vera Lucia Cardoso Silva Barros,rua,residential,130059491,-23.1993885,-45.9387721,nao,osm_overpass
+Rua Vicente de Finis,rua,residential,130059496,-23.1986515,-45.9379424,nao,osm_overpass
+Rua Waldemar Anhaias,rua,residential,130059487,-23.1995338,-45.9394844,nao,osm_overpass

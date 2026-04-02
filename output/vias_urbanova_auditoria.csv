@@ -1,0 +1,78 @@
+nome_via,nome_normalizado,highway_tag,osm_way_id,lat_ref,lon_ref,regra_inclusao,duplicado,osm_way_id_canonico
+Avenida Danilo Stanzani,avenida danilo stanzani,tertiary,313154892,-23.188819,-45.9332177,inside_urbanova_boundary,nao,313154892
+Avenida Danilo Stanzani,avenida danilo stanzani,tertiary,555442700,-23.1903118,-45.9326635,inside_urbanova_boundary,sim,313154892
+Avenida Lineu de Moura,avenida lineu de moura,primary,74838313,-23.1955172,-45.9320698,inside_urbanova_boundary,nao,74838313
+Avenida Lineu de Moura,avenida lineu de moura,primary,160698892,-23.1956864,-45.9307753,inside_urbanova_boundary,sim,74838313
+Avenida Lineu de Moura,avenida lineu de moura,primary,160698911,-23.1957503,-45.9307757,inside_urbanova_boundary,sim,74838313
+Avenida Possidônio José de Freitas,avenida possidonio jose de freitas,tertiary,1146955300,-23.1903943,-45.933106,inside_urbanova_boundary,nao,1146955300
+Avenida Possidônio José de Freitas,avenida possidonio jose de freitas,tertiary,1146955303,-23.1922832,-45.9365979,inside_urbanova_boundary,sim,1146955300
+Avenida Possidônio José de Freitas,avenida possidonio jose de freitas,tertiary,1146955304,-23.1925477,-45.9367702,inside_urbanova_boundary,sim,1146955300
+Avenida Possidônio José de Freitas,avenida possidonio jose de freitas,tertiary,1173728071,-23.19682,-45.945076,inside_urbanova_boundary,sim,1146955300
+Avenida Shishima Hifumi,avenida shishima hifumi,tertiary,74887581,-23.2029765,-45.9398864,inside_urbanova_boundary,nao,74887581
+Avenida Shishima Hifumi,avenida shishima hifumi,tertiary,129954998,-23.1951428,-45.9320606,inside_urbanova_boundary,sim,74887581
+Avenida Shishima Hifumi,avenida shishima hifumi,tertiary,129964526,-23.1955314,-45.9325347,inside_urbanova_boundary,sim,74887581
+Avenida Shishima Hifumi,avenida shishima hifumi,tertiary,555442701,-23.1905098,-45.9327173,inside_urbanova_boundary,sim,74887581
+Avenida Shishima Hifumi,avenida shishima hifumi,tertiary,1173727461,-23.204028,-45.945459,inside_urbanova_boundary,sim,74887581
+Avenida Shishima Hifumi,avenida shishima hifumi,tertiary,1173727462,-23.2030301,-45.9399467,inside_urbanova_boundary,sim,74887581
+Avenida Shishima Hifumi,avenida shishima hifumi,tertiary,1173727463,-23.2029612,-45.9400222,inside_urbanova_boundary,sim,74887581
+Avenida Shishima Hifumi,avenida shishima hifumi,tertiary,1173727465,-23.2029025,-45.939956,inside_urbanova_boundary,sim,74887581
+Extensão Ciclovia urbanova,extensao ciclovia urbanova,cycleway,1251200858,-23.1954105,-45.931593,inside_urbanova_boundary,nao,1251200858
+Ponte Flamínio Vaz de Lima,ponte flaminio vaz de lima,primary,160698890,-23.1959294,-45.9298751,inside_urbanova_boundary,nao,160698890
+Rua Afonsina Pelóia Simão,rua afonsina peloia simao,residential,129962653,-23.1921016,-45.9364584,inside_urbanova_boundary,nao,129962653
+Rua Afonsina Pelóia Simão,rua afonsina peloia simao,residential,313154891,-23.1919426,-45.9359804,inside_urbanova_boundary,sim,129962653
+Rua Afonsina Pelóia Simão,rua afonsina peloia simao,residential,335962680,-23.1918861,-45.9360757,inside_urbanova_boundary,sim,129962653
+Rua Afonsina Pelóia Simão,rua afonsina peloia simao,residential,335962681,-23.1919943,-45.9361285,inside_urbanova_boundary,sim,129962653
+Rua Afonsina Pelóia Simão,rua afonsina peloia simao,residential,1371723889,-23.1914466,-45.9329299,inside_urbanova_boundary,sim,129962653
+Rua Ângela Maria Carvalho Faria Basílio,rua angela maria carvalho faria basilio,residential,130057750,-23.1953105,-45.9376404,inside_urbanova_boundary,nao,130057750
+Rua Antonia Amaral Mello,rua antonia amaral mello,residential,130059479,-23.2007278,-45.9406788,inside_urbanova_boundary,nao,130059479
+Rua Antônio Francisco do Nascimento,rua antonio francisco do nascimento,residential,129961921,-23.1934118,-45.9331407,inside_urbanova_boundary,nao,129961921
+Rua Arnaldo Pinto Pereira,rua arnaldo pinto pereira,residential,130059492,-23.2001559,-45.9372497,inside_urbanova_boundary,nao,130059492
+Rua Arnaldo Pinto Pereira,rua arnaldo pinto pereira,residential,1425638264,-23.1990562,-45.9383299,inside_urbanova_boundary,sim,130059492
+Rua Arnaldo Pinto Pereira,rua arnaldo pinto pereira,residential,1425638265,-23.2000707,-45.9372928,inside_urbanova_boundary,sim,130059492
+Rua Arnaldo Pinto Pereira,rua arnaldo pinto pereira,residential,1425638266,-23.2001123,-45.9372029,inside_urbanova_boundary,sim,130059492
+Rua Arnaldo Pinto Pereira,rua arnaldo pinto pereira,residential,1425638267,-23.1995277,-45.9378397,inside_urbanova_boundary,sim,130059492
+Rua Benedito Elías Guedes,rua benedito elias guedes,residential,130058028,-23.1945673,-45.9363477,inside_urbanova_boundary,nao,130058028
+Rua Benedito M. de Figueiredo,rua benedito m. de figueiredo,residential,335962682,-23.1907384,-45.9327364,inside_urbanova_boundary,nao,335962682
+Rua Benedito M. de Figueiredo,rua benedito m. de figueiredo,residential,1241834549,-23.1905177,-45.9327791,inside_urbanova_boundary,sim,335962682
+Rua Benedito Pinotti,rua benedito pinotti,residential,130059471,-23.2028664,-45.940059,inside_urbanova_boundary,nao,130059471
+Rua Benedito Pinotti,rua benedito pinotti,residential,130059474,-23.1976158,-45.9340981,inside_urbanova_boundary,sim,130059471
+Rua Benedito Pinotti,rua benedito pinotti,residential,417028237,-23.1973744,-45.9343757,inside_urbanova_boundary,sim,130059471
+Rua Benedito Pinotti,rua benedito pinotti,residential,417028240,-23.2020431,-45.9406789,inside_urbanova_boundary,sim,130059471
+Rua Benedito Pinotti,rua benedito pinotti,residential,877482800,-23.2028664,-45.940059,inside_urbanova_boundary,sim,130059471
+Rua Benedito Pinotti,rua benedito pinotti,residential,877482801,-23.2029025,-45.939956,inside_urbanova_boundary,sim,130059471
+Rua Conego Ruy Amaral,rua conego ruy amaral,residential,130059477,-23.2011896,-45.9409917,inside_urbanova_boundary,nao,130059477
+Rua Cônego Ruy Amaral Mello,rua conego ruy amaral mello,residential,670116946,-23.2017758,-45.9403771,inside_urbanova_boundary,nao,670116946
+Rua Diogo Pinto da Cunha,rua diogo pinto da cunha,residential,130058027,-23.1959906,-45.9366133,inside_urbanova_boundary,nao,130058027
+Rua Dorival Domingos da Silva,rua dorival domingos da silva,residential,129961922,-23.1938929,-45.9336509,inside_urbanova_boundary,nao,129961922
+Rua Evandro Tuy Júnior,rua evandro tuy junior,residential,130059503,-23.1973638,-45.9368338,inside_urbanova_boundary,nao,130059503
+Rua Francisco J S Coelho,rua francisco j s coelho,residential,129964525,-23.1934121,-45.9318306,inside_urbanova_boundary,nao,129964525
+Rua Heli Adilson de Oliveira,rua heli adilson de oliveira,residential,130057748,-23.1964301,-45.9396671,inside_urbanova_boundary,nao,130057748
+Rua Hélio Chaves Monteiro,rua helio chaves monteiro,residential,417027274,-23.196914,-45.9334836,inside_urbanova_boundary,nao,417027274
+Rua Hélio Chaves Monteiro,rua helio chaves monteiro,residential,968469819,-23.1972534,-45.9330881,inside_urbanova_boundary,sim,417027274
+Rua João Carlos de Oliveira,rua joao carlos de oliveira,residential,130059505,-23.1972609,-45.9353036,inside_urbanova_boundary,nao,130059505
+Rua João Steiner,rua joao steiner,residential,130059485,-23.1999151,-45.9398811,inside_urbanova_boundary,nao,130059485
+Rua Joaquim Borges,rua joaquim borges,residential,129961923,-23.1947609,-45.9334296,inside_urbanova_boundary,nao,129961923
+Rua Luiz Barbosa,rua luiz barbosa,residential,130057749,-23.1985096,-45.9400979,inside_urbanova_boundary,nao,130057749
+Rua Marcos Salgada de Araújo,rua marcos salgada de araujo,residential,130059507,-23.1970832,-45.9363384,inside_urbanova_boundary,nao,130059507
+Rua Maria Aparecida de Farias,rua maria aparecida de farias,residential,130059482,-23.1999151,-45.9398811,inside_urbanova_boundary,nao,130059482
+Rua Maria da C Chaves Monteiro,rua maria da c chaves monteiro,residential,129961919,-23.2007268,-45.9360265,inside_urbanova_boundary,nao,129961919
+Rua Nacim Anis Mimessi,rua nacim anis mimessi,residential,130057746,-23.1982214,-45.9421635,inside_urbanova_boundary,nao,130057746
+Rua Norival Russiano Vieira,rua norival russiano vieira,residential,129961925,-23.195891,-45.9340867,inside_urbanova_boundary,nao,129961925
+Rua Onofre do Prado,rua onofre do prado,residential,130059499,-23.1982192,-45.9375543,inside_urbanova_boundary,nao,130059499
+Rua Professor João Bernardo da Silva,rua professor joao bernardo da silva,residential,130059500,-23.1977159,-45.9372616,inside_urbanova_boundary,nao,130059500
+Rua Rosa Barbieri Paiotti,rua rosa barbieri paiotti,residential,130058030,-23.197086,-45.9421943,inside_urbanova_boundary,nao,130058030
+Rua Rosa Barbieri Paiotti,rua rosa barbieri paiotti,residential,130058032,-23.1933323,-45.9352005,inside_urbanova_boundary,sim,130058030
+Rua Rosa Barbieri Paiotti,rua rosa barbieri paiotti,residential,417026710,-23.1930318,-45.9343893,inside_urbanova_boundary,sim,130058030
+Rua Rui Sérgio Rodrigues de Moura,rua rui sergio rodrigues de moura,residential,130058031,-23.1930767,-45.9341864,inside_urbanova_boundary,nao,130058031
+Rua Rui Sérgio Rodrigues de Moura,rua rui sergio rodrigues de moura,residential,130058215,-23.1932389,-45.9346636,inside_urbanova_boundary,sim,130058031
+Rua Rui Sérgio Rodrigues de Moura,rua rui sergio rodrigues de moura,residential,408648424,-23.1976819,-45.9421174,inside_urbanova_boundary,sim,130058031
+Rua Rui Sérgio Rodrigues de Moura,rua rui sergio rodrigues de moura,residential,797947501,-23.1931858,-45.9344989,inside_urbanova_boundary,sim,130058031
+Rua Rui Sérgio Rodrigues de Moura,rua rui sergio rodrigues de moura,residential,845673514,-23.1931514,-45.9344072,inside_urbanova_boundary,sim,130058031
+Rua Rui Sérgio Rodrigues de Moura,rua rui sergio rodrigues de moura,residential,845673515,-23.1934138,-45.9351575,inside_urbanova_boundary,sim,130058031
+Rua Severino A de Oliveira,rua severino a de oliveira,residential,129961924,-23.1953221,-45.9338054,inside_urbanova_boundary,nao,129961924
+Rua Tânia Maria de Carvalho,rua tania maria de carvalho,residential,130057745,-23.1967097,-45.9423866,inside_urbanova_boundary,nao,130057745
+Rua Tânia Maria de Carvalho,rua tania maria de carvalho,residential,408648425,-23.1976819,-45.9421174,inside_urbanova_boundary,sim,130057745
+Rua Tânia Maria de Carvalho,rua tania maria de carvalho,tertiary_link,845969073,-23.1967097,-45.9423866,inside_urbanova_boundary,nao,845969073
+Rua Vera Lucia Cardoso Silva Barros,rua vera lucia cardoso silva barros,residential,130059491,-23.1993885,-45.9387721,inside_urbanova_boundary,nao,130059491
+Rua Vicente de Finis,rua vicente de finis,residential,130059496,-23.1986515,-45.9379424,inside_urbanova_boundary,nao,130059496
+Rua Waldemar Anhaias,rua waldemar anhaias,residential,130059487,-23.1995338,-45.9394844,inside_urbanova_boundary,nao,130059487

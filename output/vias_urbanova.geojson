@@ -1,0 +1,661 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "nome_via": "Avenida Danilo Stanzani",
+        "tipo_via": "avenida",
+        "highway_tag": "tertiary",
+        "osm_way_id": 313154892
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.9332177,
+          -23.188819
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "nome_via": "Avenida Lineu de Moura",
+        "tipo_via": "avenida",
+        "highway_tag": "primary",
+        "osm_way_id": 74838313
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.9320698,
+          -23.1955172
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "nome_via": "Avenida Possidônio José de Freitas",
+        "tipo_via": "avenida",
+        "highway_tag": "tertiary",
+        "osm_way_id": 1146955300
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.933106,
+          -23.1903943
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "nome_via": "Avenida Shishima Hifumi",
+        "tipo_via": "avenida",
+        "highway_tag": "tertiary",
+        "osm_way_id": 74887581
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.9398864,
+          -23.2029765
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "nome_via": "Extensão Ciclovia urbanova",
+        "tipo_via": "logradouro",
+        "highway_tag": "cycleway",
+        "osm_way_id": 1251200858
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.931593,
+          -23.1954105
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "nome_via": "Ponte Flamínio Vaz de Lima",
+        "tipo_via": "logradouro",
+        "highway_tag": "primary",
+        "osm_way_id": 160698890
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.9298751,
+          -23.1959294
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "nome_via": "Rua Afonsina Pelóia Simão",
+        "tipo_via": "rua",
+        "highway_tag": "residential",
+        "osm_way_id": 129962653
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.9364584,
+          -23.1921016
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "nome_via": "Rua Ângela Maria Carvalho Faria Basílio",
+        "tipo_via": "rua",
+        "highway_tag": "residential",
+        "osm_way_id": 130057750
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.9376404,
+          -23.1953105
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "nome_via": "Rua Antonia Amaral Mello",
+        "tipo_via": "rua",
+        "highway_tag": "residential",
+        "osm_way_id": 130059479
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.9406788,
+          -23.2007278
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "nome_via": "Rua Antônio Francisco do Nascimento",
+        "tipo_via": "rua",
+        "highway_tag": "residential",
+        "osm_way_id": 129961921
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.9331407,
+          -23.1934118
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "nome_via": "Rua Arnaldo Pinto Pereira",
+        "tipo_via": "rua",
+        "highway_tag": "residential",
+        "osm_way_id": 130059492
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.9372497,
+          -23.2001559
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "nome_via": "Rua Benedito Elías Guedes",
+        "tipo_via": "rua",
+        "highway_tag": "residential",
+        "osm_way_id": 130058028
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.9363477,
+          -23.1945673
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "nome_via": "Rua Benedito M. de Figueiredo",
+        "tipo_via": "rua",
+        "highway_tag": "residential",
+        "osm_way_id": 335962682
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.9327364,
+          -23.1907384
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "nome_via": "Rua Benedito Pinotti",
+        "tipo_via": "rua",
+        "highway_tag": "residential",
+        "osm_way_id": 130059471
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.940059,
+          -23.2028664
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "nome_via": "Rua Conego Ruy Amaral",
+        "tipo_via": "rua",
+        "highway_tag": "residential",
+        "osm_way_id": 130059477
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.9409917,
+          -23.2011896
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "nome_via": "Rua Cônego Ruy Amaral Mello",
+        "tipo_via": "rua",
+        "highway_tag": "residential",
+        "osm_way_id": 670116946
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.9403771,
+          -23.2017758
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "nome_via": "Rua Diogo Pinto da Cunha",
+        "tipo_via": "rua",
+        "highway_tag": "residential",
+        "osm_way_id": 130058027
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.9366133,
+          -23.1959906
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "nome_via": "Rua Dorival Domingos da Silva",
+        "tipo_via": "rua",
+        "highway_tag": "residential",
+        "osm_way_id": 129961922
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.9336509,
+          -23.1938929
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "nome_via": "Rua Evandro Tuy Júnior",
+        "tipo_via": "rua",
+        "highway_tag": "residential",
+        "osm_way_id": 130059503
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.9368338,
+          -23.1973638
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "nome_via": "Rua Francisco J S Coelho",
+        "tipo_via": "rua",
+        "highway_tag": "residential",
+        "osm_way_id": 129964525
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.9318306,
+          -23.1934121
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "nome_via": "Rua Heli Adilson de Oliveira",
+        "tipo_via": "rua",
+        "highway_tag": "residential",
+        "osm_way_id": 130057748
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.9396671,
+          -23.1964301
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "nome_via": "Rua Hélio Chaves Monteiro",
+        "tipo_via": "rua",
+        "highway_tag": "residential",
+        "osm_way_id": 417027274
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.9334836,
+          -23.196914
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "nome_via": "Rua João Carlos de Oliveira",
+        "tipo_via": "rua",
+        "highway_tag": "residential",
+        "osm_way_id": 130059505
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.9353036,
+          -23.1972609
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "nome_via": "Rua João Steiner",
+        "tipo_via": "rua",
+        "highway_tag": "residential",
+        "osm_way_id": 130059485
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.9398811,
+          -23.1999151
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "nome_via": "Rua Joaquim Borges",
+        "tipo_via": "rua",
+        "highway_tag": "residential",
+        "osm_way_id": 129961923
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.9334296,
+          -23.1947609
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "nome_via": "Rua Luiz Barbosa",
+        "tipo_via": "rua",
+        "highway_tag": "residential",
+        "osm_way_id": 130057749
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.9400979,
+          -23.1985096
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "nome_via": "Rua Marcos Salgada de Araújo",
+        "tipo_via": "rua",
+        "highway_tag": "residential",
+        "osm_way_id": 130059507
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.9363384,
+          -23.1970832
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "nome_via": "Rua Maria Aparecida de Farias",
+        "tipo_via": "rua",
+        "highway_tag": "residential",
+        "osm_way_id": 130059482
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.9398811,
+          -23.1999151
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "nome_via": "Rua Maria da C Chaves Monteiro",
+        "tipo_via": "rua",
+        "highway_tag": "residential",
+        "osm_way_id": 129961919
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.9360265,
+          -23.2007268
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "nome_via": "Rua Nacim Anis Mimessi",
+        "tipo_via": "rua",
+        "highway_tag": "residential",
+        "osm_way_id": 130057746
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.9421635,
+          -23.1982214
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "nome_via": "Rua Norival Russiano Vieira",
+        "tipo_via": "rua",
+        "highway_tag": "residential",
+        "osm_way_id": 129961925
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.9340867,
+          -23.195891
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "nome_via": "Rua Onofre do Prado",
+        "tipo_via": "rua",
+        "highway_tag": "residential",
+        "osm_way_id": 130059499
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.9375543,
+          -23.1982192
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "nome_via": "Rua Professor João Bernardo da Silva",
+        "tipo_via": "rua",
+        "highway_tag": "residential",
+        "osm_way_id": 130059500
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.9372616,
+          -23.1977159
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "nome_via": "Rua Rosa Barbieri Paiotti",
+        "tipo_via": "rua",
+        "highway_tag": "residential",
+        "osm_way_id": 130058030
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.9421943,
+          -23.197086
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "nome_via": "Rua Rui Sérgio Rodrigues de Moura",
+        "tipo_via": "rua",
+        "highway_tag": "residential",
+        "osm_way_id": 130058031
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.9341864,
+          -23.1930767
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "nome_via": "Rua Severino A de Oliveira",
+        "tipo_via": "rua",
+        "highway_tag": "residential",
+        "osm_way_id": 129961924
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.9338054,
+          -23.1953221
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "nome_via": "Rua Tânia Maria de Carvalho",
+        "tipo_via": "rua",
+        "highway_tag": "residential",
+        "osm_way_id": 130057745
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.9423866,
+          -23.1967097
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "nome_via": "Rua Tânia Maria de Carvalho",
+        "tipo_via": "rua",
+        "highway_tag": "tertiary_link",
+        "osm_way_id": 845969073
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.9423866,
+          -23.1967097
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "nome_via": "Rua Vera Lucia Cardoso Silva Barros",
+        "tipo_via": "rua",
+        "highway_tag": "residential",
+        "osm_way_id": 130059491
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.9387721,
+          -23.1993885
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "nome_via": "Rua Vicente de Finis",
+        "tipo_via": "rua",
+        "highway_tag": "residential",
+        "osm_way_id": 130059496
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.9379424,
+          -23.1986515
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "nome_via": "Rua Waldemar Anhaias",
+        "tipo_via": "rua",
+        "highway_tag": "residential",
+        "osm_way_id": 130059487
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.9394844,
+          -23.1995338
+        ]
+      }
+    }
+  ]
+}

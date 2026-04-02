@@ -1,0 +1,17 @@
+{
+  "name": "urbanova-terminal-web",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Terminal web restrito para a ferramenta Urbanova.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.7",
+    "dotenv": "^16.6.1",
+    "express": "^4.21.2",
+    "ws": "^8.18.3"
+  }
+}

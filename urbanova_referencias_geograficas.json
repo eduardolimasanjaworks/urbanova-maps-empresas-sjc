@@ -1,0 +1,110 @@
+{
+  "generated_at": "2026-03-31",
+  "bairro": "Urbanova",
+  "cidade": "Sao Jose dos Campos",
+  "estado": "SP",
+  "envelope_operacional": {
+    "lat_min": -23.212,
+    "lat_max": -23.188,
+    "lon_min": -45.965,
+    "lon_max": -45.93
+  },
+  "referencias": [
+    {
+      "nome": "Avenida Shishima Hifumi",
+      "tipo": "avenida",
+      "lat": -23.1993711,
+      "lon": -45.9360518
+    },
+    {
+      "nome": "Avenida Ironman Victor Garrido",
+      "tipo": "avenida",
+      "lat": -23.2012727,
+      "lon": -45.9463171
+    },
+    {
+      "nome": "Avenida Papa Joao Paulo II",
+      "tipo": "avenida",
+      "lat": -23.2029124,
+      "lon": -45.9509053
+    },
+    {
+      "nome": "Avenida Antonio Widmer",
+      "tipo": "avenida",
+      "lat": -23.2027916,
+      "lon": -45.9561257
+    },
+    {
+      "nome": "Avenida Possidonio Jose de Freitas",
+      "tipo": "avenida",
+      "lat": -23.1960037,
+      "lon": -45.9401674
+    },
+    {
+      "nome": "Avenida Lineu de Moura",
+      "tipo": "avenida",
+      "lat": -23.1937421,
+      "lon": -45.9213587
+    },
+    {
+      "nome": "Rua Armando de Souza Guedes",
+      "tipo": "rua",
+      "lat": -23.1874008,
+      "lon": -45.9333393
+    },
+    {
+      "nome": "Parque Ribeirao Vermelho",
+      "tipo": "ponto",
+      "lat": -23.1965335,
+      "lon": -45.9585128
+    },
+    {
+      "nome": "UNIVAP Urbanova",
+      "tipo": "ponto",
+      "lat": -23.2077365,
+      "lon": -45.9487973
+    },
+    {
+      "nome": "Urbanova I",
+      "tipo": "nucleo",
+      "lat": -23.1963979,
+      "lon": -45.9355225
+    },
+    {
+      "nome": "Urbanova II",
+      "tipo": "nucleo",
+      "lat": -23.2024587,
+      "lon": -45.9432628
+    },
+    {
+      "nome": "Urbanova III",
+      "tipo": "nucleo",
+      "lat": -23.2001331,
+      "lon": -45.9490986
+    },
+    {
+      "nome": "Urbanova IV",
+      "tipo": "nucleo",
+      "lat": -23.2033247,
+      "lon": -45.9497703
+    },
+    {
+      "nome": "Urbanova V",
+      "tipo": "nucleo",
+      "lat": -23.2039215,
+      "lon": -45.9558321
+    },
+    {
+      "nome": "Urbanova VI",
+      "tipo": "nucleo",
+      "lat": -23.199758,
+      "lon": -45.9537916
+    },
+    {
+      "nome": "Urbanova VII",
+      "tipo": "nucleo",
+      "lat": -23.2006582,
+      "lon": -45.9608925
+    }
+  ]
+}
