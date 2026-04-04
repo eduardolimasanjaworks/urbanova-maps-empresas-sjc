@@ -1,0 +1,37 @@
+{
+  "timestamp_unix": 1775342549,
+  "metodo": "pipeline_gratuito_multi_fonte",
+  "custo_total": "R$ 0,00",
+  "tempo_execucao_segundos": 25.9,
+  "fases": [
+    {
+      "fase": "vias_osm",
+      "exit_code": 0
+    },
+    {
+      "fase": "pois_osm",
+      "exit_code": 0
+    }
+  ],
+  "fontes": {
+    "google_maps_scraper": 0,
+    "osm_overpass": 71
+  },
+  "resultados": {
+    "total_unificado": 67,
+    "confirmados_urbanova": 24,
+    "arredores": 43
+  },
+  "cobertura": {
+    "com_telefone_pct": 38.81,
+    "com_horario_pct": 14.93,
+    "com_website_pct": 34.33,
+    "com_email_pct": 1.49
+  },
+  "arquivos_finais": [
+    "output/empresas_urbanova_FINAL.csv",
+    "output/empresas_urbanova_FINAL_filtrada.csv",
+    "output/empresas_unificadas.jsonl"
+  ],
+  "nota": "Nenhuma API paga foi utilizada. Dados extraídos via scraping e OpenStreetMap."
+}

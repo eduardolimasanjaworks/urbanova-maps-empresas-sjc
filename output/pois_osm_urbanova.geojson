@@ -1,0 +1,1780 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": "node/5358922088",
+        "nome": "Método DeRose Urbanova",
+        "endereco": "Avenida Ironman Victor Garrido, 450, Loteamento Urbanova II, São José dos Campos",
+        "telefone": "+55 12 98258 1508",
+        "horario": "",
+        "website": "",
+        "categoria_osm": "amenity:college",
+        "email": "",
+        "whatsapp": "",
+        "descricao": "",
+        "operador": "",
+        "marca": "",
+        "fonte": "osm_overpass"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.9455164,
+          -23.2025542
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": "node/5415063125",
+        "nome": "Café na Horta",
+        "endereco": "",
+        "telefone": "",
+        "horario": "",
+        "website": "",
+        "categoria_osm": "amenity:cafe",
+        "email": "",
+        "whatsapp": "",
+        "descricao": "",
+        "operador": "",
+        "marca": "",
+        "fonte": "osm_overpass"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.9442766,
+          -23.2050701
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": "node/8731454380",
+        "nome": "Portaria Central",
+        "endereco": "Avenida Shishima Hifumi, 2911, Urbanova, São José dos Campos",
+        "telefone": "+55 12 3947-1040",
+        "horario": "",
+        "website": "www.univap.br",
+        "categoria_osm": "amenity:university",
+        "email": "",
+        "whatsapp": "",
+        "descricao": "",
+        "operador": "Univap",
+        "marca": "",
+        "fonte": "osm_overpass"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.952834,
+          -23.2071115
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": "node/8731537010",
+        "nome": "Bloco 8",
+        "endereco": "Avenida Shishima Hifumi, 2911, Urbanova, São José dos Campos",
+        "telefone": "",
+        "horario": "",
+        "website": "www.univap.br",
+        "categoria_osm": "amenity:university",
+        "email": "",
+        "whatsapp": "",
+        "descricao": "Ceplade, Tudo Aqui, Pós-Grau",
+        "operador": "",
+        "marca": "",
+        "fonte": "osm_overpass"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.9523499,
+          -23.2080282
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": "node/8731537011",
+        "nome": "Bloco 1 - FCSAC",
+        "endereco": "Avenida Shishima Hifumi, 2911, Urbanova, São José dos Campos",
+        "telefone": "",
+        "horario": "",
+        "website": "www.univap.br",
+        "categoria_osm": "amenity:university",
+        "email": "",
+        "whatsapp": "",
+        "descricao": "",
+        "operador": "",
+        "marca": "",
+        "fonte": "osm_overpass"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.9510734,
+          -23.2058772
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": "node/8731537012",
+        "nome": "Bloco 4 - Odontologia",
+        "endereco": "Avenida Shishima Hifumi, 2911', Urbanova, São José dos Campos",
+        "telefone": "(12) 3947-1016",
+        "horario": "",
+        "website": "www.univap.br",
+        "categoria_osm": "amenity:university",
+        "email": "",
+        "whatsapp": "",
+        "descricao": "",
+        "operador": "",
+        "marca": "",
+        "fonte": "osm_overpass"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.9501977,
+          -23.2052121
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": "node/8731537013",
+        "nome": "Bloco 2 - FCSAC",
+        "endereco": "Avenida Shishima Hifumi, 2911, Urbanova, São José dos Campos",
+        "telefone": "(12) 3947-1202",
+        "horario": "",
+        "website": "www.univap.br",
+        "categoria_osm": "amenity:university",
+        "email": "",
+        "whatsapp": "",
+        "descricao": "",
+        "operador": "",
+        "marca": "",
+        "fonte": "osm_overpass"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.9492732,
+          -23.2048944
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": "node/8731537014",
+        "nome": "Bloco 3 - FEA",
+        "endereco": "Avenida Shishima Hifumi, 2911, Urbanova, São José dos Campos",
+        "telefone": "(12) 3947-1008",
+        "horario": "",
+        "website": "www.univap.br",
+        "categoria_osm": "amenity:university",
+        "email": "",
+        "whatsapp": "",
+        "descricao": "",
+        "operador": "",
+        "marca": "",
+        "fonte": "osm_overpass"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.9492945,
+          -23.205405
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": "node/8731537015",
+        "nome": "Bloco 5 - Setores Administrativos FVE/Univap",
+        "endereco": "Avenida Shishima Hifumi, 2911, Urbanova, São José dos Campos",
+        "telefone": "",
+        "horario": "",
+        "website": "www.univap.br",
+        "categoria_osm": "amenity:university",
+        "email": "",
+        "whatsapp": "",
+        "descricao": "",
+        "operador": "",
+        "marca": "",
+        "fonte": "osm_overpass"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.9502347,
+          -23.2059117
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": "node/8731537016",
+        "nome": "Bloco 12 - IP&DII",
+        "endereco": "Avenida Shishima Hifumi, 2911, Urbanova, São José dos Campos",
+        "telefone": "(12) 3947-1122",
+        "horario": "",
+        "website": "www.univap.br",
+        "categoria_osm": "amenity:university",
+        "email": "",
+        "whatsapp": "",
+        "descricao": "",
+        "operador": "",
+        "marca": "",
+        "fonte": "osm_overpass"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.9567507,
+          -23.2103643
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": "node/8731557817",
+        "nome": "Bloco 11 - IP&D I",
+        "endereco": "Avenida Shishima Hifumi, 2911, Urbanova, São José dos Campos",
+        "telefone": "",
+        "horario": "",
+        "website": "www.univap.br",
+        "categoria_osm": "amenity:university",
+        "email": "",
+        "whatsapp": "",
+        "descricao": "",
+        "operador": "",
+        "marca": "",
+        "fonte": "osm_overpass"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.9563579,
+          -23.2101408
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": "node/8731557818",
+        "nome": "Bloco 10",
+        "endereco": "Avenida Shishima Hifumi, 2911, Urbanova, São José dos Campos",
+        "telefone": "(12) 3947-1006",
+        "horario": "",
+        "website": "www.univap.br",
+        "categoria_osm": "amenity:university",
+        "email": "",
+        "whatsapp": "",
+        "descricao": "Eng. Aeronáutica, Eng. Ambiental e Sanitária, Eng. Biomédica, Eng. Civil, Eng. da Computação, Eng. de Produção, Eng. Elétrica, Eng. Mecânica, Eng. Química",
+        "operador": "",
+        "marca": "",
+        "fonte": "osm_overpass"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.963567,
+          -23.2116821
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": "node/8731658920",
+        "nome": "Parque Tecnológico Univap",
+        "endereco": "Avenida Shishima Hifumi, 2911, Urbanova, São José dos Campos",
+        "telefone": "(12) 3947-1205",
+        "horario": "",
+        "website": "",
+        "categoria_osm": "office:educational_institution",
+        "email": "",
+        "whatsapp": "",
+        "descricao": "",
+        "operador": "",
+        "marca": "",
+        "fonte": "osm_overpass"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.952212,
+          -23.2085894
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": "node/8731658921",
+        "nome": "Salão de Eventos - Capela",
+        "endereco": "Avenida Shishima Hifumi, 2911, Urbanova, São José dos Campos",
+        "telefone": "",
+        "horario": "",
+        "website": "",
+        "categoria_osm": "office:educational_institution",
+        "email": "",
+        "whatsapp": "",
+        "descricao": "",
+        "operador": "",
+        "marca": "",
+        "fonte": "osm_overpass"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.9511008,
+          -23.208714
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": "node/8731818873",
+        "nome": "Área de Alimentação",
+        "endereco": "",
+        "telefone": "",
+        "horario": "",
+        "website": "",
+        "categoria_osm": "amenity:restaurant",
+        "email": "",
+        "whatsapp": "",
+        "descricao": "",
+        "operador": "",
+        "marca": "",
+        "fonte": "osm_overpass"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.9506677,
+          -23.2054488
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": "node/8731818874",
+        "nome": "Ginásio poliesportivo",
+        "endereco": "",
+        "telefone": "",
+        "horario": "",
+        "website": "",
+        "categoria_osm": "leisure:sports_hall",
+        "email": "",
+        "whatsapp": "",
+        "descricao": "",
+        "operador": "",
+        "marca": "",
+        "fonte": "osm_overpass"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.9487595,
+          -23.2053329
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": "node/8731818876",
+        "nome": "CEN - Curso de Ciências Biológicas",
+        "endereco": "Avenida Shishima Hifumi, 2911, Urbanova, São José dos Campos",
+        "telefone": "",
+        "horario": "",
+        "website": "",
+        "categoria_osm": "office:educational_institution",
+        "email": "",
+        "whatsapp": "",
+        "descricao": "",
+        "operador": "",
+        "marca": "",
+        "fonte": "osm_overpass"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.9644762,
+          -23.2108024
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": "node/8742694628",
+        "nome": "Laboratório de Exercícios Resistidos (Academia)",
+        "endereco": "Avenida Shishima Hifumi, 2911, Urbanova, São José dos Campos",
+        "telefone": "",
+        "horario": "",
+        "website": "",
+        "categoria_osm": "leisure:sports_hall",
+        "email": "",
+        "whatsapp": "",
+        "descricao": "",
+        "operador": "",
+        "marca": "",
+        "fonte": "osm_overpass"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.9492261,
+          -23.2052956
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": "node/8742694629",
+        "nome": "SEPA- Serviço Escola de Psicologia Aplicada",
+        "endereco": "Avenida Shishima Hifumi, 2911, Urbanova, São José dos Campos",
+        "telefone": "(12) 3947-1262",
+        "horario": "",
+        "website": "www.univap.br",
+        "categoria_osm": "office:educational_institution",
+        "email": "",
+        "whatsapp": "",
+        "descricao": "",
+        "operador": "",
+        "marca": "",
+        "fonte": "osm_overpass"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.9495768,
+          -23.2060542
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": "node/10576799646",
+        "nome": "Pet Max Th",
+        "endereco": "Avenida Maria de Lourdes Friggi, 485",
+        "telefone": "012991847535",
+        "horario": "Mo-Fr 09:00-17:00; Sa 08:00-16:00",
+        "website": "https://www.petmaxthibor.com.br/",
+        "categoria_osm": "shop:pet",
+        "email": "",
+        "whatsapp": "",
+        "descricao": "",
+        "operador": "",
+        "marca": "",
+        "fonte": "osm_overpass"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.9607169,
+          -23.1993562
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": "node/11630824414",
+        "nome": "Quiero Café",
+        "endereco": "",
+        "telefone": "",
+        "horario": "",
+        "website": "",
+        "categoria_osm": "amenity:cafe",
+        "email": "",
+        "whatsapp": "",
+        "descricao": "",
+        "operador": "",
+        "marca": "",
+        "fonte": "osm_overpass"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.9405041,
+          -23.2037519
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": "node/11630824415",
+        "nome": "Swift",
+        "endereco": "",
+        "telefone": "",
+        "horario": "",
+        "website": "",
+        "categoria_osm": "shop:butcher",
+        "email": "",
+        "whatsapp": "",
+        "descricao": "",
+        "operador": "",
+        "marca": "",
+        "fonte": "osm_overpass"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.9405249,
+          -23.2040023
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": "node/11630824416",
+        "nome": "Mio",
+        "endereco": "",
+        "telefone": "",
+        "horario": "",
+        "website": "",
+        "categoria_osm": "amenity:ice_cream",
+        "email": "",
+        "whatsapp": "",
+        "descricao": "",
+        "operador": "",
+        "marca": "",
+        "fonte": "osm_overpass"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.9405675,
+          -23.2040484
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": "node/11630824417",
+        "nome": "Bullguer",
+        "endereco": "",
+        "telefone": "",
+        "horario": "",
+        "website": "",
+        "categoria_osm": "amenity:fast_food",
+        "email": "",
+        "whatsapp": "",
+        "descricao": "",
+        "operador": "",
+        "marca": "",
+        "fonte": "osm_overpass"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.9405219,
+          -23.2040785
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": "node/11809993169",
+        "nome": "Pé na Areia",
+        "endereco": "Avenida Shishima Hifumi, 1971",
+        "telefone": "012997506539",
+        "horario": "We-Fr 07:00-23:00; Sa-Su 09:00-12:00; Mo-Tu 07:00-21:00",
+        "website": "",
+        "categoria_osm": "amenity:bar",
+        "email": "",
+        "whatsapp": "",
+        "descricao": "",
+        "operador": "",
+        "marca": "",
+        "fonte": "osm_overpass"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.9424653,
+          -23.2041293
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": "node/11813146387",
+        "nome": "UrbaFISIO",
+        "endereco": "",
+        "telefone": "012991453781",
+        "horario": "",
+        "website": "",
+        "categoria_osm": "shop:massage",
+        "email": "",
+        "whatsapp": "",
+        "descricao": "",
+        "operador": "",
+        "marca": "",
+        "fonte": "osm_overpass"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.9589122,
+          -23.1997428
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": "node/11813657169",
+        "nome": "Troina Pizza Gourmet",
+        "endereco": "",
+        "telefone": "01239427044",
+        "horario": "Mo-Su 18:00-23:00",
+        "website": "https://troina.com.br/",
+        "categoria_osm": "amenity:restaurant",
+        "email": "",
+        "whatsapp": "",
+        "descricao": "",
+        "operador": "",
+        "marca": "",
+        "fonte": "osm_overpass"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.9417879,
+          -23.1902741
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": "node/12232102601",
+        "nome": "Tecplant.garden",
+        "endereco": "",
+        "telefone": "01239491726",
+        "horario": "Mo-Fr 07:30-17:30; Sa 08:00-13:00",
+        "website": "",
+        "categoria_osm": "shop:garden_centre",
+        "email": "",
+        "whatsapp": "",
+        "descricao": "",
+        "operador": "",
+        "marca": "",
+        "fonte": "osm_overpass"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.955953,
+          -23.202067
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": "node/12232183801",
+        "nome": "Eletrofer - Materiais para construção",
+        "endereco": "Avenida Maria de Lourdes Friggi",
+        "telefone": "",
+        "horario": "",
+        "website": "",
+        "categoria_osm": "shop:hardware",
+        "email": "",
+        "whatsapp": "",
+        "descricao": "",
+        "operador": "",
+        "marca": "",
+        "fonte": "osm_overpass"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.9575581,
+          -23.2006231
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": "node/12232183802",
+        "nome": "Fazol Urbanova - Aço Armado",
+        "endereco": "Avenida Maria de Lourdes Friggi",
+        "telefone": "",
+        "horario": "",
+        "website": "",
+        "categoria_osm": "craft:metal_construction",
+        "email": "",
+        "whatsapp": "",
+        "descricao": "",
+        "operador": "",
+        "marca": "",
+        "fonte": "osm_overpass"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.9576843,
+          -23.200553
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": "node/12232192901",
+        "nome": "Life On - Treinamentos personalizado",
+        "endereco": "",
+        "telefone": "012997405797",
+        "horario": "",
+        "website": "",
+        "categoria_osm": "leisure:fitness_centre",
+        "email": "",
+        "whatsapp": "",
+        "descricao": "",
+        "operador": "",
+        "marca": "",
+        "fonte": "osm_overpass"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.9592448,
+          -23.1994236
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": "node/12236484401",
+        "nome": "Reborn - Auto SPA",
+        "endereco": "Avenida Maria de Lourdes Friggi",
+        "telefone": "",
+        "horario": "",
+        "website": "",
+        "categoria_osm": "shop:car_repair",
+        "email": "",
+        "whatsapp": "",
+        "descricao": "",
+        "operador": "",
+        "marca": "",
+        "fonte": "osm_overpass"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.9606819,
+          -23.1993616
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": "node/12249139930",
+        "nome": "Villarreal Supermercado",
+        "endereco": "",
+        "telefone": "01239492961",
+        "horario": "Mo-Sa 07:00-22:00; Su 08:00-20:00",
+        "website": "http://villarreal.com.br",
+        "categoria_osm": "shop:supermarket",
+        "email": "",
+        "whatsapp": "",
+        "descricao": "",
+        "operador": "",
+        "marca": "",
+        "fonte": "osm_overpass"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.933465,
+          -23.1893773
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": "node/12249147701",
+        "nome": "Lavtop",
+        "endereco": "",
+        "telefone": "012997970777;01239366020",
+        "horario": "",
+        "website": "http://franquialavtop.com.br",
+        "categoria_osm": "shop:laundry",
+        "email": "",
+        "whatsapp": "",
+        "descricao": "",
+        "operador": "",
+        "marca": "",
+        "fonte": "osm_overpass"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.9338199,
+          -23.1894644
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": "node/12249147702",
+        "nome": "Grão de Café",
+        "endereco": "",
+        "telefone": "01239490333",
+        "horario": "Mo-Sa 07:00-21:00; Su 08:00-14:00",
+        "website": "",
+        "categoria_osm": "amenity:cafe",
+        "email": "",
+        "whatsapp": "",
+        "descricao": "",
+        "operador": "",
+        "marca": "",
+        "fonte": "osm_overpass"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.933228,
+          -23.1894615
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": "node/12249164801",
+        "nome": "Solare",
+        "endereco": "",
+        "telefone": "",
+        "horario": "",
+        "website": "",
+        "categoria_osm": "amenity:school",
+        "email": "",
+        "whatsapp": "",
+        "descricao": "",
+        "operador": "",
+        "marca": "",
+        "fonte": "osm_overpass"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.9417525,
+          -23.196747
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": "node/12254845201",
+        "nome": "Space Oil - Troca de Óleo",
+        "endereco": "Avenida Maria de Lourdes Friggi",
+        "telefone": "",
+        "horario": "",
+        "website": "",
+        "categoria_osm": "shop:car_repair",
+        "email": "",
+        "whatsapp": "",
+        "descricao": "",
+        "operador": "",
+        "marca": "",
+        "fonte": "osm_overpass"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.9571201,
+          -23.2010518
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": "node/12264667001",
+        "nome": "Seo Mesquita - Pizza bar",
+        "endereco": "Avenida Maria de Lourdes Friggi, 651",
+        "telefone": "",
+        "horario": "",
+        "website": "",
+        "categoria_osm": "amenity:bar",
+        "email": "",
+        "whatsapp": "",
+        "descricao": "",
+        "operador": "",
+        "marca": "",
+        "fonte": "osm_overpass"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.9566558,
+          -23.2014533
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": "node/12280024001",
+        "nome": "MAIS1.CAFÉ",
+        "endereco": "Avenida Maria de Lourdes Friggi, 465",
+        "telefone": "",
+        "horario": "Mo-Fr 06:30-19:00; Sa-Su 07:30-17:30",
+        "website": "",
+        "categoria_osm": "shop:coffee",
+        "email": "",
+        "whatsapp": "",
+        "descricao": "",
+        "operador": "",
+        "marca": "",
+        "fonte": "osm_overpass"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.9602575,
+          -23.1992641
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": "way/295590051",
+        "nome": "Praça Rodolfo Arrua",
+        "endereco": "",
+        "telefone": "",
+        "horario": "",
+        "website": "",
+        "categoria_osm": "leisure:park",
+        "email": "",
+        "whatsapp": "",
+        "descricao": "",
+        "operador": "",
+        "marca": "",
+        "fonte": "osm_overpass"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.9616443,
+          -23.1934393
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": "way/335919978",
+        "nome": "Universidade do vale da Paraíba",
+        "endereco": "Avenida Shishima Hifumi, 2911, Urbanova",
+        "telefone": "+55 12 3947 1000",
+        "horario": "",
+        "website": "",
+        "categoria_osm": "amenity:university",
+        "email": "",
+        "whatsapp": "",
+        "descricao": "",
+        "operador": "Fundação Valeparaibano de Ensino",
+        "marca": "",
+        "fonte": "osm_overpass"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.9505645,
+          -23.207628
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": "way/335925014",
+        "nome": "Bloco 7",
+        "endereco": "Avenida Shishima Hifumi, 2911, Urbanova, São José dos Campos",
+        "telefone": "(12) 3947-1015",
+        "horario": "",
+        "website": "www.univap.br",
+        "categoria_osm": "office:educational_institution",
+        "email": "",
+        "whatsapp": "",
+        "descricao": "",
+        "operador": "",
+        "marca": "",
+        "fonte": "osm_overpass"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.9537772,
+          -23.2090621
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": "way/335925016",
+        "nome": "Bloco 9 - FCS, FCSAC",
+        "endereco": "Avenida Shishima Hifumi, 2911, Urbanova, São José dos Campos",
+        "telefone": "(12) 3947-1219",
+        "horario": "",
+        "website": "www.univap.br",
+        "categoria_osm": "office:educational_institution",
+        "email": "",
+        "whatsapp": "",
+        "descricao": "",
+        "operador": "",
+        "marca": "",
+        "fonte": "osm_overpass"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.9531358,
+          -23.2090577
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": "way/335925018",
+        "nome": "Bloco 6",
+        "endereco": "Avenida Shishima Hifumi, 2911, Urbanova, São José dos Campos",
+        "telefone": "(12) 3947-1028",
+        "horario": "",
+        "website": "www.univap.br",
+        "categoria_osm": "office:educational_institution",
+        "email": "",
+        "whatsapp": "",
+        "descricao": "Curso de Arquitetura,  Medicina Veterinária, Engenharia da Computação e Engenharia Biomédica.",
+        "operador": "Univap",
+        "marca": "",
+        "fonte": "osm_overpass"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.9533396,
+          -23.2085698
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": "way/335925019",
+        "nome": "Parque Tecnológico Univap",
+        "endereco": "",
+        "telefone": "",
+        "horario": "",
+        "website": "",
+        "categoria_osm": "office:educational_institution",
+        "email": "",
+        "whatsapp": "",
+        "descricao": "",
+        "operador": "",
+        "marca": "",
+        "fonte": "osm_overpass"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.9522142,
+          -23.2085991
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": "way/335925021",
+        "nome": "Bloco 8",
+        "endereco": "Avenida Shishima Hifumi, 2911, Urbanova, São José dos Campos",
+        "telefone": "",
+        "horario": "",
+        "website": "www.univap.br",
+        "categoria_osm": "office:educational_institution",
+        "email": "",
+        "whatsapp": "",
+        "descricao": "Ceplade, Tudo Aqui, Pós-Grau",
+        "operador": "",
+        "marca": "",
+        "fonte": "osm_overpass"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.9523471,
+          -23.2080389
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": "way/335925022",
+        "nome": "Capela",
+        "endereco": "",
+        "telefone": "",
+        "horario": "",
+        "website": "",
+        "categoria_osm": "office:educational_institution",
+        "email": "",
+        "whatsapp": "",
+        "descricao": "",
+        "operador": "",
+        "marca": "",
+        "fonte": "osm_overpass"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.95109,
+          -23.2087145
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": "way/335925024",
+        "nome": "Anexo Parque Tecnológico Univap",
+        "endereco": "Avenida Shishima Hifumi, 2911, Urbanova, São José dos Campos",
+        "telefone": "(12) 3947-1000",
+        "horario": "",
+        "website": "www.univap.br",
+        "categoria_osm": "office:educational_institution",
+        "email": "",
+        "whatsapp": "",
+        "descricao": "",
+        "operador": "",
+        "marca": "",
+        "fonte": "osm_overpass"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.9527579,
+          -23.2083369
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": "way/335925027",
+        "nome": "Bloco 11 - IP&D I",
+        "endereco": "",
+        "telefone": "",
+        "horario": "",
+        "website": "",
+        "categoria_osm": "office:educational_institution",
+        "email": "",
+        "whatsapp": "",
+        "descricao": "",
+        "operador": "",
+        "marca": "",
+        "fonte": "osm_overpass"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.9563532,
+          -23.2101442
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": "way/335925028",
+        "nome": "Bloco 12 - IP&DII",
+        "endereco": "",
+        "telefone": "",
+        "horario": "",
+        "website": "",
+        "categoria_osm": "office:educational_institution",
+        "email": "",
+        "whatsapp": "",
+        "descricao": "",
+        "operador": "",
+        "marca": "",
+        "fonte": "osm_overpass"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.9567454,
+          -23.2103729
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": "way/335925031",
+        "nome": "Bloco 1 - FCSAC",
+        "endereco": "",
+        "telefone": "",
+        "horario": "",
+        "website": "",
+        "categoria_osm": "office:educational_institution",
+        "email": "",
+        "whatsapp": "",
+        "descricao": "",
+        "operador": "",
+        "marca": "",
+        "fonte": "osm_overpass"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.9510812,
+          -23.2058808
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": "way/335925033",
+        "nome": "Bloco 5 - Setores Adm.",
+        "endereco": "",
+        "telefone": "",
+        "horario": "",
+        "website": "",
+        "categoria_osm": "office:educational_institution",
+        "email": "",
+        "whatsapp": "",
+        "descricao": "",
+        "operador": "",
+        "marca": "",
+        "fonte": "osm_overpass"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.9502231,
+          -23.2058822
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": "way/335925035",
+        "nome": "Bloco 4 - Odontologia",
+        "endereco": "",
+        "telefone": "",
+        "horario": "",
+        "website": "",
+        "categoria_osm": "office:educational_institution",
+        "email": "",
+        "whatsapp": "",
+        "descricao": "",
+        "operador": "",
+        "marca": "",
+        "fonte": "osm_overpass"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.9501661,
+          -23.2051789
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": "way/335925036",
+        "nome": "Área de Alimentação",
+        "endereco": "",
+        "telefone": "",
+        "horario": "",
+        "website": "",
+        "categoria_osm": "office:educational_institution",
+        "email": "",
+        "whatsapp": "",
+        "descricao": "",
+        "operador": "",
+        "marca": "",
+        "fonte": "osm_overpass"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.9506416,
+          -23.2054332
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": "way/335925038",
+        "nome": "Bloco 3 - FEA",
+        "endereco": "",
+        "telefone": "",
+        "horario": "",
+        "website": "",
+        "categoria_osm": "office:educational_institution",
+        "email": "",
+        "whatsapp": "",
+        "descricao": "",
+        "operador": "",
+        "marca": "",
+        "fonte": "osm_overpass"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.949303,
+          -23.2054398
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": "way/335925040",
+        "nome": "Ginásio Poliesportivo",
+        "endereco": "",
+        "telefone": "",
+        "horario": "",
+        "website": "",
+        "categoria_osm": "office:educational_institution",
+        "email": "",
+        "whatsapp": "",
+        "descricao": "",
+        "operador": "",
+        "marca": "",
+        "fonte": "osm_overpass"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.948758,
+          -23.2053782
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": "way/550523893",
+        "nome": "Bloco 10 - FEAU",
+        "endereco": "",
+        "telefone": "",
+        "horario": "",
+        "website": "",
+        "categoria_osm": "office:educational_institution",
+        "email": "",
+        "whatsapp": "",
+        "descricao": "Faculdade de Engenharias, Arquitetura e Urbanismo da UNIVAP",
+        "operador": "",
+        "marca": "",
+        "fonte": "osm_overpass"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.9635608,
+          -23.2116919
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": "way/550523894",
+        "nome": "Anexo FEAU",
+        "endereco": "",
+        "telefone": "",
+        "horario": "",
+        "website": "",
+        "categoria_osm": "office:educational_institution",
+        "email": "",
+        "whatsapp": "",
+        "descricao": "",
+        "operador": "",
+        "marca": "",
+        "fonte": "osm_overpass"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.9641998,
+          -23.2115998
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": "way/625617041",
+        "nome": "Cantina FEAU",
+        "endereco": "",
+        "telefone": "",
+        "horario": "",
+        "website": "",
+        "categoria_osm": "amenity:restaurant",
+        "email": "",
+        "whatsapp": "",
+        "descricao": "",
+        "operador": "",
+        "marca": "",
+        "fonte": "osm_overpass"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.9634102,
+          -23.2112615
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": "way/625617043",
+        "nome": "Oficina FEAU",
+        "endereco": "",
+        "telefone": "",
+        "horario": "",
+        "website": "",
+        "categoria_osm": "amenity:school",
+        "email": "",
+        "whatsapp": "",
+        "descricao": "",
+        "operador": "Univap",
+        "marca": "",
+        "fonte": "osm_overpass"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.9637623,
+          -23.2111459
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": "way/626418831",
+        "nome": "Piscina",
+        "endereco": "",
+        "telefone": "",
+        "horario": "",
+        "website": "",
+        "categoria_osm": "leisure:swimming_pool",
+        "email": "",
+        "whatsapp": "",
+        "descricao": "",
+        "operador": "",
+        "marca": "",
+        "fonte": "osm_overpass"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.9484796,
+          -23.2060103
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": "way/694631106",
+        "nome": "Pracinha",
+        "endereco": "Rua Conego Ruy Amaral",
+        "telefone": "",
+        "horario": "24/7",
+        "website": "",
+        "categoria_osm": "leisure:park",
+        "email": "",
+        "whatsapp": "",
+        "descricao": "",
+        "operador": "",
+        "marca": "",
+        "fonte": "osm_overpass"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.9394419,
+          -23.2022263
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": "way/694631107",
+        "nome": "Campinhoo",
+        "endereco": "",
+        "telefone": "",
+        "horario": "",
+        "website": "",
+        "categoria_osm": "leisure:pitch",
+        "email": "",
+        "whatsapp": "",
+        "descricao": "",
+        "operador": "",
+        "marca": "",
+        "fonte": "osm_overpass"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.9409761,
+          -23.2015271
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": "way/942972336",
+        "nome": "Bloco 2 - FCSAC",
+        "endereco": "",
+        "telefone": "",
+        "horario": "",
+        "website": "",
+        "categoria_osm": "office:educational_institution",
+        "email": "",
+        "whatsapp": "",
+        "descricao": "",
+        "operador": "",
+        "marca": "",
+        "fonte": "osm_overpass"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.9492688,
+          -23.2048922
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": "way/1134515922",
+        "nome": "CycleX Bike Shop Urbanova",
+        "endereco": "Avenida Maria de Lourdes Friggi, 371",
+        "telefone": "012997399926",
+        "horario": "Mo, We-Fr 08:00-18:00; Sa-Su 07:00-14:00; Tu 08:00-21:00",
+        "website": "https://www.cyclexsports.com.br/",
+        "categoria_osm": "shop:bicycle",
+        "email": "",
+        "whatsapp": "",
+        "descricao": "",
+        "operador": "",
+        "marca": "",
+        "fonte": "osm_overpass"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.9588522,
+          -23.1997369
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": "way/1134520141",
+        "nome": "Igreja Batista Sião",
+        "endereco": "Rua Albino dos Anjos Conrado, 80",
+        "telefone": "01239493069",
+        "horario": "Su 09:00-21:00; We 07:30-21:00",
+        "website": "https://igrejabatistasiao.sjc.br/",
+        "categoria_osm": "amenity:place_of_worship",
+        "email": "",
+        "whatsapp": "",
+        "descricao": "",
+        "operador": "",
+        "marca": "",
+        "fonte": "osm_overpass"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.9526709,
+          -23.202451
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": "way/1183740735",
+        "nome": "Centro Comercial Iron Man",
+        "endereco": "Avenida Ironman Victor Garrido, 460, São José dos Campos",
+        "telefone": "",
+        "horario": "",
+        "website": "",
+        "categoria_osm": "shop:mall",
+        "email": "",
+        "whatsapp": "",
+        "descricao": "",
+        "operador": "",
+        "marca": "",
+        "fonte": "osm_overpass"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.9470888,
+          -23.200356
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": "way/1190703379",
+        "nome": "CEN - Curso de Ciências Biológicas",
+        "endereco": "Avenida Shishima Hifumi, 2911, Urbanova, São José dos Campos",
+        "telefone": "",
+        "horario": "",
+        "website": "",
+        "categoria_osm": "office:educational_institution",
+        "email": "",
+        "whatsapp": "",
+        "descricao": "",
+        "operador": "",
+        "marca": "",
+        "fonte": "osm_overpass"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.9644892,
+          -23.2108167
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": "way/1216098138",
+        "nome": "CVET - Clínica Veterinária de Grandes Animais",
+        "endereco": "",
+        "telefone": "",
+        "horario": "",
+        "website": "",
+        "categoria_osm": "amenity:veterinary",
+        "email": "",
+        "whatsapp": "",
+        "descricao": "",
+        "operador": "Univap",
+        "marca": "",
+        "fonte": "osm_overpass"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.9626469,
+          -23.2117676
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": "way/1391437975",
+        "nome": "Container BROWe!",
+        "endereco": "Avenida Shishima Hifumi, 2101, Urbanova, São José dos Campos",
+        "telefone": "",
+        "horario": "",
+        "website": "https://linktr.ee/browecervejariasjc",
+        "categoria_osm": "amenity:bar",
+        "email": "",
+        "whatsapp": "",
+        "descricao": "",
+        "operador": "",
+        "marca": "",
+        "fonte": "osm_overpass"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.9408739,
+          -23.2044012
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": "way/1415418537",
+        "nome": "Paróquia Santo Agostinho",
+        "endereco": "Avenida Papa João Paulo II",
+        "telefone": "01239491515",
+        "horario": "",
+        "website": "https://www.paroquiasantoagostinho.org.br/",
+        "categoria_osm": "amenity:place_of_worship",
+        "email": "santoagostinho.secretaria@gmail.com",
+        "whatsapp": "",
+        "descricao": "",
+        "operador": "",
+        "marca": "",
+        "fonte": "osm_overpass"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.9503924,
+          -23.2027892
+        ]
+      }
+    }
+  ]
+}

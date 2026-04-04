@@ -1,0 +1,25 @@
+id,nome,endereco,latitude,longitude,telefone,horario,website,email,avaliacao,total_reviews,categoria,status_negocio,google_maps_url,osm_id,fontes
+be88a6d6acb7eff4,Anexo Parque Tecnológico Univap,"Avenida Shishima Hifumi, 2911, Urbanova, São José dos Campos",-23.2083369,-45.9527579,(12) 3947-1000,,www.univap.br,,,,office:educational_institution,,,way/335925024,osm_overpass
+aadb3d3bb5405f24,Bloco 1 - FCSAC,"Avenida Shishima Hifumi, 2911, Urbanova, São José dos Campos",-23.2058772,-45.9510734,,,www.univap.br,,,,amenity:university,,,node/8731537011,osm_overpass
+fa335b42a9e4c1e1,Bloco 10,"Avenida Shishima Hifumi, 2911, Urbanova, São José dos Campos",-23.2116821,-45.963567,(12) 3947-1006,,www.univap.br,,,,amenity:university,,,node/8731557818,osm_overpass
+174ee070c1546d8a,Bloco 11 - IP&D I,"Avenida Shishima Hifumi, 2911, Urbanova, São José dos Campos",-23.2101408,-45.9563579,,,www.univap.br,,,,amenity:university,,,node/8731557817,osm_overpass
+18c4b680a6021e11,Bloco 12 - IP&DII,"Avenida Shishima Hifumi, 2911, Urbanova, São José dos Campos",-23.2103643,-45.9567507,(12) 3947-1122,,www.univap.br,,,,amenity:university,,,node/8731537016,osm_overpass
+0be28222258eae81,Bloco 2 - FCSAC,"Avenida Shishima Hifumi, 2911, Urbanova, São José dos Campos",-23.2048944,-45.9492732,(12) 3947-1202,,www.univap.br,,,,amenity:university,,,node/8731537013,osm_overpass
+38437a45df169dc5,Bloco 3 - FEA,"Avenida Shishima Hifumi, 2911, Urbanova, São José dos Campos",-23.205405,-45.9492945,(12) 3947-1008,,www.univap.br,,,,amenity:university,,,node/8731537014,osm_overpass
+7457217ecfd871ce,Bloco 4 - Odontologia,"Avenida Shishima Hifumi, 2911', Urbanova, São José dos Campos",-23.2052121,-45.9501977,(12) 3947-1016,,www.univap.br,,,,amenity:university,,,node/8731537012,osm_overpass
+05c9129cd90d4fcc,Bloco 5 - Setores Administrativos FVE/Univap,"Avenida Shishima Hifumi, 2911, Urbanova, São José dos Campos",-23.2059117,-45.9502347,,,www.univap.br,,,,amenity:university,,,node/8731537015,osm_overpass
+ea6e0c8155ba89a3,Bloco 6,"Avenida Shishima Hifumi, 2911, Urbanova, São José dos Campos",-23.2085698,-45.9533396,(12) 3947-1028,,www.univap.br,,,,office:educational_institution,,,way/335925018,osm_overpass
+4a1cc2356f2003ea,Bloco 7,"Avenida Shishima Hifumi, 2911, Urbanova, São José dos Campos",-23.2090621,-45.9537772,(12) 3947-1015,,www.univap.br,,,,office:educational_institution,,,way/335925014,osm_overpass
+2de3d99bae957614,Bloco 8,"Avenida Shishima Hifumi, 2911, Urbanova, São José dos Campos",-23.2080282,-45.9523499,,,www.univap.br,,,,amenity:university,,,node/8731537010,osm_overpass
+1f5c6c1930df9fe2,"Bloco 9 - FCS, FCSAC","Avenida Shishima Hifumi, 2911, Urbanova, São José dos Campos",-23.2090577,-45.9531358,(12) 3947-1219,,www.univap.br,,,,office:educational_institution,,,way/335925016,osm_overpass
+c478697fd5556869,CEN - Curso de Ciências Biológicas,"Avenida Shishima Hifumi, 2911, Urbanova, São José dos Campos",-23.2108024,-45.9644762,,,,,,,office:educational_institution,,,node/8731818876,osm_overpass
+fec6782eb37880b6,Container BROWe!,"Avenida Shishima Hifumi, 2101, Urbanova, São José dos Campos",-23.2044012,-45.9408739,,,https://linktr.ee/browecervejariasjc,,,,amenity:bar,,,way/1391437975,osm_overpass
+f8370db21022e520,CycleX Bike Shop Urbanova,"Avenida Maria de Lourdes Friggi, 371",-23.1997369,-45.9588522,012997399926,"Mo, We-Fr 08:00-18:00; Sa-Su 07:00-14:00; Tu 08:00-21:00",https://www.cyclexsports.com.br/,,,,shop:bicycle,,,way/1134515922,osm_overpass
+6b087c5145fbcefa,Fazol Urbanova - Aço Armado,Avenida Maria de Lourdes Friggi,-23.200553,-45.9576843,,,,,,,craft:metal_construction,,,node/12232183802,osm_overpass
+53dc603aca26ff4d,Laboratório de Exercícios Resistidos (Academia),"Avenida Shishima Hifumi, 2911, Urbanova, São José dos Campos",-23.2052956,-45.9492261,,,,,,,leisure:sports_hall,,,node/8742694628,osm_overpass
+09a742d57532d3f6,Método DeRose Urbanova,"Avenida Ironman Victor Garrido, 450, Loteamento Urbanova II, São José dos Campos",-23.2025542,-45.9455164,+55 12 98258 1508,,,,,,amenity:college,,,node/5358922088,osm_overpass
+9a88b30cb2f123d6,Parque Tecnológico Univap,"Avenida Shishima Hifumi, 2911, Urbanova, São José dos Campos",-23.2085894,-45.952212,(12) 3947-1205,,,,,,office:educational_institution,,,node/8731658920,osm_overpass
+6892962c7886720c,Portaria Central,"Avenida Shishima Hifumi, 2911, Urbanova, São José dos Campos",-23.2071115,-45.952834,+55 12 3947-1040,,www.univap.br,,,,amenity:university,,,node/8731454380,osm_overpass
+28f375eeab45c324,Salão de Eventos - Capela,"Avenida Shishima Hifumi, 2911, Urbanova, São José dos Campos",-23.208714,-45.9511008,,,,,,,office:educational_institution,,,node/8731658921,osm_overpass
+996602099986a379,SEPA- Serviço Escola de Psicologia Aplicada,"Avenida Shishima Hifumi, 2911, Urbanova, São José dos Campos",-23.2060542,-45.9495768,(12) 3947-1262,,www.univap.br,,,,office:educational_institution,,,node/8742694629,osm_overpass
+09d2a0c9b53e2ceb,Universidade do vale da Paraíba,"Avenida Shishima Hifumi, 2911, Urbanova",-23.207628,-45.9505645,+55 12 3947 1000,,,,,,amenity:university,,,way/335919978,osm_overpass

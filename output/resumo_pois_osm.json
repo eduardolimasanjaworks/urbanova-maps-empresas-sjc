@@ -1,0 +1,18 @@
+{
+  "timestamp_unix": 1775342549,
+  "metodo": "osm_overpass_gratuito",
+  "custo": "R$ 0,00",
+  "total_elementos": 79,
+  "pois_com_nome": 71,
+  "pois_sem_nome": 8,
+  "cobertura": {
+    "com_telefone_pct": 36.62,
+    "com_horario_pct": 14.08,
+    "com_website_pct": 33.8
+  },
+  "arquivos": [
+    "output/pois_osm_urbanova.csv",
+    "output/pois_osm_urbanova.jsonl",
+    "output/pois_osm_urbanova.geojson"
+  ]
+}

@@ -1,0 +1,68 @@
+id,nome,endereco,latitude,longitude,telefone,horario,website,email,avaliacao,total_reviews,categoria,status_negocio,google_maps_url,osm_id,fontes
+d48fe04371b2b8d5,Anexo FEAU,,-23.2115998,-45.9641998,,,,,,,office:educational_institution,,,way/550523894,osm_overpass
+be88a6d6acb7eff4,Anexo Parque Tecnológico Univap,"Avenida Shishima Hifumi, 2911, Urbanova, São José dos Campos",-23.2083369,-45.9527579,(12) 3947-1000,,www.univap.br,,,,office:educational_institution,,,way/335925024,osm_overpass
+aadb3d3bb5405f24,Bloco 1 - FCSAC,"Avenida Shishima Hifumi, 2911, Urbanova, São José dos Campos",-23.2058772,-45.9510734,,,www.univap.br,,,,amenity:university,,,node/8731537011,osm_overpass
+6bb2d84e3e2371f9,Bloco 1 - FCSAC,,-23.2058808,-45.9510812,,,,,,,office:educational_institution,,,way/335925031,osm_overpass
+fa335b42a9e4c1e1,Bloco 10,"Avenida Shishima Hifumi, 2911, Urbanova, São José dos Campos",-23.2116821,-45.963567,(12) 3947-1006,,www.univap.br,,,,amenity:university,,,node/8731557818,osm_overpass
+4a93269ba3f12087,Bloco 10 - FEAU,,-23.2116919,-45.9635608,,,,,,,office:educational_institution,,,way/550523893,osm_overpass
+174ee070c1546d8a,Bloco 11 - IP&D I,"Avenida Shishima Hifumi, 2911, Urbanova, São José dos Campos",-23.2101408,-45.9563579,,,www.univap.br,,,,amenity:university,,,node/8731557817,osm_overpass
+0d199720edb1baff,Bloco 11 - IP&D I,,-23.2101442,-45.9563532,,,,,,,office:educational_institution,,,way/335925027,osm_overpass
+18c4b680a6021e11,Bloco 12 - IP&DII,"Avenida Shishima Hifumi, 2911, Urbanova, São José dos Campos",-23.2103643,-45.9567507,(12) 3947-1122,,www.univap.br,,,,amenity:university,,,node/8731537016,osm_overpass
+3a4039961a3a18e6,Bloco 12 - IP&DII,,-23.2103729,-45.9567454,,,,,,,office:educational_institution,,,way/335925028,osm_overpass
+0be28222258eae81,Bloco 2 - FCSAC,"Avenida Shishima Hifumi, 2911, Urbanova, São José dos Campos",-23.2048944,-45.9492732,(12) 3947-1202,,www.univap.br,,,,amenity:university,,,node/8731537013,osm_overpass
+92e3fd4a2d3b2371,Bloco 2 - FCSAC,,-23.2048922,-45.9492688,,,,,,,office:educational_institution,,,way/942972336,osm_overpass
+38437a45df169dc5,Bloco 3 - FEA,"Avenida Shishima Hifumi, 2911, Urbanova, São José dos Campos",-23.205405,-45.9492945,(12) 3947-1008,,www.univap.br,,,,amenity:university,,,node/8731537014,osm_overpass
+2c30b5fb5843c6dc,Bloco 3 - FEA,,-23.2054398,-45.949303,,,,,,,office:educational_institution,,,way/335925038,osm_overpass
+7457217ecfd871ce,Bloco 4 - Odontologia,"Avenida Shishima Hifumi, 2911', Urbanova, São José dos Campos",-23.2052121,-45.9501977,(12) 3947-1016,,www.univap.br,,,,amenity:university,,,node/8731537012,osm_overpass
+e0e0473f3bc53299,Bloco 4 - Odontologia,,-23.2051789,-45.9501661,,,,,,,office:educational_institution,,,way/335925035,osm_overpass
+5a773e84ff568823,Bloco 5 - Setores Adm.,,-23.2058822,-45.9502231,,,,,,,office:educational_institution,,,way/335925033,osm_overpass
+05c9129cd90d4fcc,Bloco 5 - Setores Administrativos FVE/Univap,"Avenida Shishima Hifumi, 2911, Urbanova, São José dos Campos",-23.2059117,-45.9502347,,,www.univap.br,,,,amenity:university,,,node/8731537015,osm_overpass
+ea6e0c8155ba89a3,Bloco 6,"Avenida Shishima Hifumi, 2911, Urbanova, São José dos Campos",-23.2085698,-45.9533396,(12) 3947-1028,,www.univap.br,,,,office:educational_institution,,,way/335925018,osm_overpass
+4a1cc2356f2003ea,Bloco 7,"Avenida Shishima Hifumi, 2911, Urbanova, São José dos Campos",-23.2090621,-45.9537772,(12) 3947-1015,,www.univap.br,,,,office:educational_institution,,,way/335925014,osm_overpass
+2de3d99bae957614,Bloco 8,"Avenida Shishima Hifumi, 2911, Urbanova, São José dos Campos",-23.2080282,-45.9523499,,,www.univap.br,,,,amenity:university,,,node/8731537010,osm_overpass
+1f5c6c1930df9fe2,"Bloco 9 - FCS, FCSAC","Avenida Shishima Hifumi, 2911, Urbanova, São José dos Campos",-23.2090577,-45.9531358,(12) 3947-1219,,www.univap.br,,,,office:educational_institution,,,way/335925016,osm_overpass
+88d18092c31b41c2,Bullguer,,-23.2040785,-45.9405219,,,,,,,amenity:fast_food,,,node/11630824417,osm_overpass
+c96f6b089ce1dd2b,Café na Horta,,-23.2050701,-45.9442766,,,,,,,amenity:cafe,,,node/5415063125,osm_overpass
+b33d9ad30ee9d0a5,Campinhoo,,-23.2015271,-45.9409761,,,,,,,leisure:pitch,,,way/694631107,osm_overpass
+994e1321ee5d718a,Cantina FEAU,,-23.2112615,-45.9634102,,,,,,,amenity:restaurant,,,way/625617041,osm_overpass
+18c1f7117b1e6a03,Capela,,-23.2087145,-45.95109,,,,,,,office:educational_institution,,,way/335925022,osm_overpass
+c478697fd5556869,CEN - Curso de Ciências Biológicas,"Avenida Shishima Hifumi, 2911, Urbanova, São José dos Campos",-23.2108024,-45.9644762,,,,,,,office:educational_institution,,,node/8731818876,osm_overpass
+9cbc23857699aad4,Centro Comercial Iron Man,"Avenida Ironman Victor Garrido, 460, São José dos Campos",-23.200356,-45.9470888,,,,,,,shop:mall,,,way/1183740735,osm_overpass
+fec6782eb37880b6,Container BROWe!,"Avenida Shishima Hifumi, 2101, Urbanova, São José dos Campos",-23.2044012,-45.9408739,,,https://linktr.ee/browecervejariasjc,,,,amenity:bar,,,way/1391437975,osm_overpass
+873c221a926e22e9,CVET - Clínica Veterinária de Grandes Animais,,-23.2117676,-45.9626469,,,,,,,amenity:veterinary,,,way/1216098138,osm_overpass
+f8370db21022e520,CycleX Bike Shop Urbanova,"Avenida Maria de Lourdes Friggi, 371",-23.1997369,-45.9588522,012997399926,"Mo, We-Fr 08:00-18:00; Sa-Su 07:00-14:00; Tu 08:00-21:00",https://www.cyclexsports.com.br/,,,,shop:bicycle,,,way/1134515922,osm_overpass
+2fa13efb23c4e276,Eletrofer - Materiais para construção,Avenida Maria de Lourdes Friggi,-23.2006231,-45.9575581,,,,,,,shop:hardware,,,node/12232183801,osm_overpass
+6b087c5145fbcefa,Fazol Urbanova - Aço Armado,Avenida Maria de Lourdes Friggi,-23.200553,-45.9576843,,,,,,,craft:metal_construction,,,node/12232183802,osm_overpass
+5c66a79de6a6a337,Ginásio poliesportivo,,-23.2053329,-45.9487595,,,,,,,leisure:sports_hall,,,node/8731818874,osm_overpass
+357bc70e89f76f9a,Grão de Café,,-23.1894615,-45.933228,01239490333,Mo-Sa 07:00-21:00; Su 08:00-14:00,,,,,amenity:cafe,,,node/12249147702,osm_overpass
+451c14da0b950bff,Igreja Batista Sião,"Rua Albino dos Anjos Conrado, 80",-23.202451,-45.9526709,01239493069,Su 09:00-21:00; We 07:30-21:00,https://igrejabatistasiao.sjc.br/,,,,amenity:place_of_worship,,,way/1134520141,osm_overpass
+53dc603aca26ff4d,Laboratório de Exercícios Resistidos (Academia),"Avenida Shishima Hifumi, 2911, Urbanova, São José dos Campos",-23.2052956,-45.9492261,,,,,,,leisure:sports_hall,,,node/8742694628,osm_overpass
+8d43e7c36b914844,Lavtop,,-23.1894644,-45.9338199,012997970777;01239366020,,http://franquialavtop.com.br,,,,shop:laundry,,,node/12249147701,osm_overpass
+accb9802813cf4fa,Life On - Treinamentos personalizado,,-23.1994236,-45.9592448,012997405797,,,,,,leisure:fitness_centre,,,node/12232192901,osm_overpass
+29a5c77e256a6d6f,MAIS1.CAFÉ,"Avenida Maria de Lourdes Friggi, 465",-23.1992641,-45.9602575,,Mo-Fr 06:30-19:00; Sa-Su 07:30-17:30,,,,,shop:coffee,,,node/12280024001,osm_overpass
+c8cac9cb84942363,Mio,,-23.2040484,-45.9405675,,,,,,,amenity:ice_cream,,,node/11630824416,osm_overpass
+09a742d57532d3f6,Método DeRose Urbanova,"Avenida Ironman Victor Garrido, 450, Loteamento Urbanova II, São José dos Campos",-23.2025542,-45.9455164,+55 12 98258 1508,,,,,,amenity:college,,,node/5358922088,osm_overpass
+f8850dbcaacf5167,Oficina FEAU,,-23.2111459,-45.9637623,,,,,,,amenity:school,,,way/625617043,osm_overpass
+9a88b30cb2f123d6,Parque Tecnológico Univap,"Avenida Shishima Hifumi, 2911, Urbanova, São José dos Campos",-23.2085894,-45.952212,(12) 3947-1205,,,,,,office:educational_institution,,,node/8731658920,osm_overpass
+937536202846d7a3,Parque Tecnológico Univap,,-23.2085991,-45.9522142,,,,,,,office:educational_institution,,,way/335925019,osm_overpass
+f72520389b059bb9,Paróquia Santo Agostinho,Avenida Papa João Paulo II,-23.2027892,-45.9503924,01239491515,,https://www.paroquiasantoagostinho.org.br/,santoagostinho.secretaria@gmail.com,,,amenity:place_of_worship,,,way/1415418537,osm_overpass
+02696f7601626b0c,Pet Max Th,"Avenida Maria de Lourdes Friggi, 485",-23.1993562,-45.9607169,012991847535,Mo-Fr 09:00-17:00; Sa 08:00-16:00,https://www.petmaxthibor.com.br/,,,,shop:pet,,,node/10576799646,osm_overpass
+dd092e4c9c122ed4,Piscina,,-23.2060103,-45.9484796,,,,,,,leisure:swimming_pool,,,way/626418831,osm_overpass
+6892962c7886720c,Portaria Central,"Avenida Shishima Hifumi, 2911, Urbanova, São José dos Campos",-23.2071115,-45.952834,+55 12 3947-1040,,www.univap.br,,,,amenity:university,,,node/8731454380,osm_overpass
+194a06cc80e327ed,Pracinha,Rua Conego Ruy Amaral,-23.2022263,-45.9394419,,24/7,,,,,leisure:park,,,way/694631106,osm_overpass
+ba8d4508ceb097fa,Praça Rodolfo Arrua,,-23.1934393,-45.9616443,,,,,,,leisure:park,,,way/295590051,osm_overpass
+73397e412747a318,Pé na Areia,"Avenida Shishima Hifumi, 1971",-23.2041293,-45.9424653,012997506539,We-Fr 07:00-23:00; Sa-Su 09:00-12:00; Mo-Tu 07:00-21:00,,,,,amenity:bar,,,node/11809993169,osm_overpass
+0ddab9e2f578134f,Quiero Café,,-23.2037519,-45.9405041,,,,,,,amenity:cafe,,,node/11630824414,osm_overpass
+559cf3996b2a5fc0,Reborn - Auto SPA,Avenida Maria de Lourdes Friggi,-23.1993616,-45.9606819,,,,,,,shop:car_repair,,,node/12236484401,osm_overpass
+28f375eeab45c324,Salão de Eventos - Capela,"Avenida Shishima Hifumi, 2911, Urbanova, São José dos Campos",-23.208714,-45.9511008,,,,,,,office:educational_institution,,,node/8731658921,osm_overpass
+7a07c77c49375760,Seo Mesquita - Pizza bar,"Avenida Maria de Lourdes Friggi, 651",-23.2014533,-45.9566558,,,,,,,amenity:bar,,,node/12264667001,osm_overpass
+996602099986a379,SEPA- Serviço Escola de Psicologia Aplicada,"Avenida Shishima Hifumi, 2911, Urbanova, São José dos Campos",-23.2060542,-45.9495768,(12) 3947-1262,,www.univap.br,,,,office:educational_institution,,,node/8742694629,osm_overpass
+bccb4c3025f40d43,Solare,,-23.196747,-45.9417525,,,,,,,amenity:school,,,node/12249164801,osm_overpass
+bee620547945fd76,Space Oil - Troca de Óleo,Avenida Maria de Lourdes Friggi,-23.2010518,-45.9571201,,,,,,,shop:car_repair,,,node/12254845201,osm_overpass
+1454e34da4d3af15,Swift,,-23.2040023,-45.9405249,,,,,,,shop:butcher,,,node/11630824415,osm_overpass
+c96123369d428ceb,Tecplant.garden,,-23.202067,-45.955953,01239491726,Mo-Fr 07:30-17:30; Sa 08:00-13:00,,,,,shop:garden_centre,,,node/12232102601,osm_overpass
+b7375c1a6b1a7535,Troina Pizza Gourmet,,-23.1902741,-45.9417879,01239427044,Mo-Su 18:00-23:00,https://troina.com.br/,,,,amenity:restaurant,,,node/11813657169,osm_overpass
+09d2a0c9b53e2ceb,Universidade do vale da Paraíba,"Avenida Shishima Hifumi, 2911, Urbanova",-23.207628,-45.9505645,+55 12 3947 1000,,,,,,amenity:university,,,way/335919978,osm_overpass
+3948cb0c227fac21,UrbaFISIO,,-23.1997428,-45.9589122,012991453781,,,,,,shop:massage,,,node/11813146387,osm_overpass
+3326c725c128ac61,Villarreal Supermercado,,-23.1893773,-45.933465,01239492961,Mo-Sa 07:00-22:00; Su 08:00-20:00,http://villarreal.com.br,,,,shop:supermarket,,,node/12249139930,osm_overpass
+a50323fad83f74fc,Área de Alimentação,,-23.2054488,-45.9506677,,,,,,,amenity:restaurant,,,node/8731818873,osm_overpass

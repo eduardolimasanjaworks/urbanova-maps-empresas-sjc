@@ -31,15 +31,16 @@ function getMenu() {
   return {
     title: "Escolha uma opcao",
     options: [
-      { id: "start_capture", label: "Capturar todas as empresas do Urbanova (modo maximo)" },
-      { id: "show_status", label: "Ver status da ultima execucao" },
-      { id: "consult_balance", label: "Consultar saldo/uso estimado" },
-      { id: "explain_algorithm", label: "Como o algoritmo funciona (modo leigo)" },
-      { id: "download_csv", label: "Baixar CSV final" },
-      { id: "show_key_help", label: "Como criar API Key no Google Cloud" },
-      { id: "show_failures", label: "Por que a ferramenta pode falhar e fallback" },
-      { id: "run_test", label: "Rodar teste rapido da API Key" },
-      { id: "logout", label: "Sair" },
+      { id: "start_free_capture", label: "🆓 Capturar empresas GRATIS (scraper + OSM)" },
+      { id: "start_free_osm_only", label: "🗺️  Capturar apenas via OpenStreetMap (mais rapido)" },
+      { id: "start_free_scraper_only", label: "🕷️  Capturar apenas via Google Maps scraping" },
+      { id: "show_status", label: "📊 Ver status da ultima execucao" },
+      { id: "explain_algorithm", label: "❓ Como o algoritmo funciona (modo leigo)" },
+      { id: "download_csv", label: "📥 Baixar CSV final" },
+      { id: "show_failures", label: "⚠️  Por que a ferramenta pode falhar e fallback" },
+      { id: "start_capture", label: "💳 Capturar via API paga Google (requer API Key)" },
+      { id: "run_test", label: "🔑 Testar API Key Google (modo pago)" },
+      { id: "logout", label: "🚪 Sair" },
     ],
   };
 }
@@ -62,19 +63,44 @@ function fallbackMessage(stderr) {
 }
 
 function summarizeStatus() {
-  const statusPath = path.join(TOOL_DIR, "output", "resumo_execucao.json");
-  if (!fs.existsSync(statusPath)) {
-    return "Sem execucao anterior. Escolha a opcao de captura.";
+  // Check free pipeline first
+  const freePath = path.join(TOOL_DIR, "output", "resumo_pipeline_gratuito.json");
+  const paidPath = path.join(TOOL_DIR, "output", "resumo_execucao.json");
+
+  const lines = [];
+
+  if (fs.existsSync(freePath)) {
+    const data = JSON.parse(fs.readFileSync(freePath, "utf8"));
+    lines.push(
+      "🆓 Pipeline Gratuito (ultima execucao):",
+      `- Custo: ${data.custo_total || "R$ 0,00"}`,
+      `- Total empresas encontradas: ${data?.resultados?.total_unificado ?? 0}`,
+      `- Confirmadas Urbanova: ${data?.resultados?.confirmados_urbanova ?? 0}`,
+      `- Com telefone: ${data?.cobertura?.com_telefone_pct ?? 0}%`,
+      `- Com horario: ${data?.cobertura?.com_horario_pct ?? 0}%`,
+      `- Com website: ${data?.cobertura?.com_website_pct ?? 0}%`,
+      `- Com email: ${data?.cobertura?.com_email_pct ?? 0}%`,
+      `- Tempo: ${data.tempo_execucao_segundos ?? 0}s`,
+      `- Fontes: Google Maps Scraper (${data?.fontes?.google_maps_scraper ?? 0}) + OSM (${data?.fontes?.osm_overpass ?? 0})`,
+    );
   }
-  const data = JSON.parse(fs.readFileSync(statusPath, "utf8"));
-  return [
-    "Ultima execucao:",
-    `- Empresas unicas encontradas: ${data.total_unique_places || 0}`,
-    `- Cobertura com telefone: ${data?.coverage?.with_phone_pct ?? 0}%`,
-    `- Cobertura com horario: ${data?.coverage?.with_hours_pct ?? 0}%`,
-    `- Cobertura com website: ${data?.coverage?.with_website_pct ?? 0}%`,
-    `- Vias sem cobertura: ${data?.coverage?.uncovered_roads_count ?? 0}`,
-  ].join("\n");
+
+  if (fs.existsSync(paidPath)) {
+    const data = JSON.parse(fs.readFileSync(paidPath, "utf8"));
+    if (lines.length) lines.push("");
+    lines.push(
+      "💳 Pipeline Pago (ultima execucao):",
+      `- Empresas: ${data.total_unique_places || 0}`,
+      `- Com telefone: ${data?.coverage?.with_phone_pct ?? 0}%`,
+      `- Com horario: ${data?.coverage?.with_hours_pct ?? 0}%`,
+      `- Com website: ${data?.coverage?.with_website_pct ?? 0}%`,
+    );
+  }
+
+  if (!lines.length) {
+    return "Sem execucao anterior. Escolha uma opcao de captura.";
+  }
+  return lines.join("\n");
 }
 
 function keyHelpText() {
@@ -143,15 +169,24 @@ function estimateUsageAndCost() {
 function algorithmForLaymanText() {
   return [
     "Como tentamos pegar 'todas' as empresas do Urbanova:",
-    "1) Dividimos o bairro em varios pontos (grade).",
-    "2) Em cada ponto, consultamos a API oficial do Google Maps.",
-    "3) Repetimos por tipos de negocio (clinica, restaurante, farmacia, etc.).",
-    "4) Repetimos por ruas/avenidas importantes para reduzir buracos.",
-    "5) Juntamos tudo e removemos duplicadas.",
-    "6) Pedimos detalhes (telefone, horario, site).",
-    "7) Geramos CSV final.",
     "",
-    "Observacao: o Google pode nao listar 100% absoluto, mas este modo busca cobertura maxima.",
+    "🆓 MODO GRATUITO (recomendado):",
+    "1) Abrimos o Google Maps no navegador automatico (como voce faria).",
+    "2) Buscamos por cada tipo de negocio: restaurante, farmacia, clinica, etc.",
+    "3) Rolamos todos os resultados para capturar o maximo possivel.",
+    "4) Entramos em cada empresa para pegar telefone, horario, site, etc.",
+    "5) Consultamos o OpenStreetMap (mapa livre) para pegar mais dados.",
+    "6) Juntamos tudo, removemos duplicados, e geramos o CSV final.",
+    "7) Custo: R$ 0,00!",
+    "",
+    "💳 MODO PAGO (API Google):",
+    "1) Dividimos o bairro em varios pontos (grade).",
+    "2) Consultamos a API oficial do Google Maps (paga).",
+    "3) Repetimos por tipos de negocio e ruas.",
+    "4) Pedimos detalhes de cada empresa.",
+    "5) Custo: ~US$ 10-50 dependendo da quantidade.",
+    "",
+    "Observacao: ambos os modos buscam cobertura maxima.",
   ].join("\n");
 }
 
@@ -159,9 +194,12 @@ app.get("/health", (_req, res) => res.json({ ok: true }));
 app.get("/download/csv", (req, res) => {
   const sid = String(req.query.sid || "");
   if (!sid || !authSessions.has(sid)) return res.status(401).json({ error: "nao autenticado" });
-  const csvPath = path.join(TOOL_DIR, "output", "empresas_urbanova.csv");
+  // Prefer the free pipeline final CSV, fallback to legacy
+  const freeCsv = path.join(TOOL_DIR, "output", "empresas_urbanova_FINAL.csv");
+  const legacyCsv = path.join(TOOL_DIR, "output", "empresas_urbanova.csv");
+  const csvPath = fs.existsSync(freeCsv) ? freeCsv : legacyCsv;
   if (!fs.existsSync(csvPath)) return res.status(404).json({ error: "CSV ainda nao gerado" });
-  return res.download(csvPath, "empresas_urbanova.csv");
+  return res.download(csvPath, "empresas_urbanova_FINAL.csv");
 });
 app.use(express.static(path.join(__dirname, "public")));
 
@@ -289,10 +327,82 @@ wss.on("connection", (ws) => {
       return;
     }
 
+    // ─── Free pipeline actions ───────────────────────────────
+    if (action === "start_free_capture" || action === "start_free_osm_only" || action === "start_free_scraper_only") {
+      const active = activeProcesses.get(ws);
+      if (active) {
+        wsSend(ws, { type: "line", data: "Ja existe um processo em execucao.\n" });
+        wsSend(ws, { type: "ready" });
+        return;
+      }
+
+      const cmd = process.platform === "win32" ? "python" : "python3";
+      let args = ["pipeline_gratuito.py"];
+      let modeLabel = "completo (Scraper + OSM)";
+
+      if (action === "start_free_osm_only") {
+        args.push("--skip-scraper");
+        modeLabel = "apenas OpenStreetMap (rapido)";
+      } else if (action === "start_free_scraper_only") {
+        args.push("--skip-osm");
+        modeLabel = "apenas Google Maps Scraping";
+      }
+
+      wsSend(ws, { type: "line", data: `🆓 Iniciando captura GRATUITA - modo ${modeLabel}\n` });
+      wsSend(ws, { type: "line", data: "Isso pode levar alguns minutos. Aguarde...\n" });
+
+      const proc = spawn(cmd, args, { cwd: TOOL_DIR, env: process.env, shell: false });
+      activeProcesses.set(ws, proc);
+      let stdoutBuffer = "";
+      let stderrBuffer = "";
+      proc.stdout.on("data", (c) => {
+        const s = c.toString("utf8");
+        stdoutBuffer += s;
+        // Stream progress to user
+        wsSend(ws, { type: "line", data: s });
+      });
+      proc.stderr.on("data", (c) => {
+        stderrBuffer += c.toString("utf8");
+      });
+      proc.on("close", (code) => {
+        if (code === 0) {
+          const statusPath = path.join(TOOL_DIR, "output", "resumo_pipeline_gratuito.json");
+          if (fs.existsSync(statusPath)) {
+            const data = JSON.parse(fs.readFileSync(statusPath, "utf8"));
+            wsSend(ws, {
+              type: "line",
+              data: [
+                "",
+                "✅ Captura GRATUITA concluida!",
+                `- Custo: ${data.custo_total || "R$ 0,00"}`,
+                `- Empresas encontradas: ${data?.resultados?.total_unificado ?? 0}`,
+                `- Confirmadas Urbanova: ${data?.resultados?.confirmados_urbanova ?? 0}`,
+                `- Com telefone: ${data?.cobertura?.com_telefone_pct ?? 0}%`,
+                `- Com website: ${data?.cobertura?.com_website_pct ?? 0}%`,
+                "Use a opcao 'Baixar CSV final'.",
+              ].join("\n") + "\n",
+            });
+          } else {
+            wsSend(ws, { type: "line", data: "✅ Captura concluida! Use 'Baixar CSV final'.\n" });
+          }
+        } else {
+          wsSend(ws, { type: "line", data: `❌ ${fallbackMessage(stderrBuffer)}\n` });
+          if (stderrBuffer) {
+            wsSend(ws, { type: "line", data: `Detalhes: ${stderrBuffer.slice(0, 500)}\n` });
+          }
+        }
+        wsSend(ws, { type: "menu", ...getMenu() });
+        wsSend(ws, { type: "ready" });
+        activeProcesses.delete(ws);
+      });
+      return;
+    }
+
+    // ─── Paid pipeline actions (legacy) ───────────────────────
     if (action === "run_test" || action === "start_capture") {
       const key = process.env.MAPS_SERVER_API_KEY || "";
       if (!key) {
-        wsSend(ws, { type: "line", data: "Nao funcionou: falta MAPS_SERVER_API_KEY no .env.\n" });
+        wsSend(ws, { type: "line", data: "Nao funcionou: falta MAPS_SERVER_API_KEY no .env.\nDica: use o modo GRATUITO que nao precisa de API key!\n" });
         wsSend(ws, { type: "menu", ...getMenu() });
         wsSend(ws, { type: "ready" });
         return;
@@ -313,7 +423,7 @@ wss.on("connection", (ws) => {
         action === "run_test"
           ? "Google Places API (validação real de credencial)"
           : "Google Places API + Overpass (execucao full)";
-      wsSend(ws, { type: "line", data: `Estou indo consultar a API do Maps: ${apiName}\n` });
+      wsSend(ws, { type: "line", data: `💳 Estou indo consultar a API paga: ${apiName}\n` });
 
       const proc = spawn(cmd, args, { cwd: TOOL_DIR, env: process.env, shell: false });
       activeProcesses.set(ws, proc);
