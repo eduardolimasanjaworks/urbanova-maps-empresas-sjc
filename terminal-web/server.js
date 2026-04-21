@@ -1,6 +1,6 @@
 const path = require("path");
 const fs = require("fs");
-const { spawn } = require("child_process");
+const { spawn, spawnSync } = require("child_process");
 const express = require("express");
 const bcrypt = require("bcryptjs");
 const dotenv = require("dotenv");
@@ -11,13 +11,52 @@ dotenv.config();
 const app = express();
 const HOST = process.env.HOST || "0.0.0.0";
 const PORT = Number(process.env.PORT || 8787);
-const TOOL_DIR = process.env.TOOL_DIR || path.resolve(__dirname, "..");
+const TOOL_DIR = path.resolve(process.env.TOOL_DIR || path.join(__dirname, ".."));
+const PYTHON_BIN =
+  process.env.PYTHON_BIN || (process.platform === "win32" ? "python" : "python3");
 const USERNAME = process.env.TERMINAL_USERNAME || "admin";
 const PASSWORD_HASH = process.env.TERMINAL_PASSWORD_HASH || "";
 
 if (!PASSWORD_HASH) {
   console.error("ERRO: defina TERMINAL_PASSWORD_HASH no .env");
   process.exit(1);
+}
+
+function buscasConfigPath() {
+  return path.join(TOOL_DIR, "config", "buscas_urbanova.json");
+}
+
+function writeBuscasConfig(data) {
+  const p = buscasConfigPath();
+  fs.mkdirSync(path.dirname(p), { recursive: true });
+  fs.writeFileSync(p, JSON.stringify(data, null, 2) + "\n", "utf8");
+}
+
+function ensureBuscasConfig() {
+  const p = buscasConfigPath();
+  if (fs.existsSync(p)) return true;
+  fs.mkdirSync(path.dirname(p), { recursive: true });
+  spawnSync(PYTHON_BIN, ["gerenciar_buscas.py", "init"], {
+    cwd: TOOL_DIR,
+    env: process.env,
+    encoding: "utf8",
+  });
+  if (!fs.existsSync(p)) {
+    writeBuscasConfig({
+      bairro: "Urbanova",
+      cidade: "São José dos Campos",
+      incluir_buscas_amplas: true,
+      segmentos: [],
+    });
+  }
+  return true;
+}
+
+/** @returns {object} */
+function readBuscasConfig() {
+  ensureBuscasConfig();
+  const p = buscasConfigPath();
+  return JSON.parse(fs.readFileSync(p, "utf8"));
 }
 
 const activeProcesses = new Map();
@@ -34,12 +73,22 @@ function getMenu() {
       { id: "start_free_capture", label: "🆓 Capturar empresas GRATIS (scraper + OSM)" },
       { id: "start_free_osm_only", label: "🗺️  Capturar apenas via OpenStreetMap (mais rapido)" },
       { id: "start_free_scraper_only", label: "🕷️  Capturar apenas via Google Maps scraping" },
+      {
+        id: "merge_only",
+        label: "🧩 Só gerar CSV final (merge, sem re-scrapar — use se o download veio velho)",
+      },
       { id: "show_status", label: "📊 Ver status da ultima execucao" },
       { id: "explain_algorithm", label: "❓ Como o algoritmo funciona (modo leigo)" },
       { id: "download_csv", label: "📥 Baixar CSV final" },
       { id: "show_failures", label: "⚠️  Por que a ferramenta pode falhar e fallback" },
       { id: "start_capture", label: "💳 Capturar via API paga Google (requer API Key)" },
       { id: "run_test", label: "🔑 Testar API Key Google (modo pago)" },
+      { id: "buscas_list", label: "📋 Ver termos de busca (config)" },
+      { id: "buscas_add", label: "➕ Adicionar termos de busca" },
+      { id: "buscas_remove", label: "➖ Remover termo(s) de busca" },
+      { id: "buscas_amplas", label: "🔀 Ligar/desligar buscas amplas" },
+      { id: "buscas_bairro", label: "📍 Definir bairro" },
+      { id: "buscas_cidade", label: "🏙 Definir cidade" },
       { id: "logout", label: "🚪 Sair" },
     ],
   };
@@ -249,6 +298,79 @@ wss.on("connection", (ws) => {
       return;
     }
 
+    if (msg.type === "input_cancel") {
+      wsSend(ws, { type: "line", data: "Operacao cancelada.\n" });
+      wsSend(ws, { type: "menu", ...getMenu() });
+      wsSend(ws, { type: "ready" });
+      return;
+    }
+
+    if (msg.type === "input") {
+      const exp = String(msg.expect || "");
+      const raw = String(msg.value || "");
+      try {
+        const data = readBuscasConfig();
+        if (!Array.isArray(data.segmentos)) data.segmentos = [];
+
+        if (exp === "buscas_add") {
+          const parts = raw
+            .split(/[,;]+/)
+            .map((s) => s.trim())
+            .filter(Boolean);
+          const seen = new Set(data.segmentos);
+          let n = 0;
+          for (const p of parts) {
+            if (!seen.has(p)) {
+              data.segmentos.push(p);
+              seen.add(p);
+              n += 1;
+            }
+          }
+          writeBuscasConfig(data);
+          wsSend(ws, {
+            type: "line",
+            data: `Adicionados ${n} termo(s) novo(s). Total: ${data.segmentos.length}\n`,
+          });
+        } else if (exp === "buscas_remove") {
+          const toRemove = new Set(
+            raw
+              .split(/[,;]+/)
+              .map((s) => s.trim())
+              .filter(Boolean),
+          );
+          const before = data.segmentos.length;
+          data.segmentos = data.segmentos.filter((s) => !toRemove.has(s));
+          writeBuscasConfig(data);
+          wsSend(ws, {
+            type: "line",
+            data: `Removidos ${before - data.segmentos.length} termo(s). Restam ${data.segmentos.length}\n`,
+          });
+        } else if (exp === "buscas_bairro") {
+          const v = raw.trim();
+          if (!v) throw new Error("Bairro vazio");
+          data.bairro = v;
+          writeBuscasConfig(data);
+          wsSend(ws, { type: "line", data: `Bairro salvo: ${v}\n` });
+        } else if (exp === "buscas_cidade") {
+          const v = raw.trim();
+          if (!v) throw new Error("Cidade vazia");
+          data.cidade = v;
+          writeBuscasConfig(data);
+          wsSend(ws, { type: "line", data: `Cidade salva: ${v}\n` });
+        } else {
+          wsSend(ws, { type: "line", data: "Entrada desconhecida.\n" });
+        }
+      } catch (err) {
+        wsSend(ws, {
+          type: "line",
+          data: `Erro ao salvar config: ${err.message || err}\n`,
+        });
+      }
+      wsSend(ws, { type: "menu", ...getMenu() });
+      wsSend(ws, { type: "ready" });
+      return;
+    }
+
     if (msg.type !== "action") return;
     const action = String(msg.action || "");
 
@@ -290,7 +412,9 @@ wss.on("connection", (ws) => {
     }
 
     if (action === "download_csv") {
-      const csvPath = path.join(TOOL_DIR, "output", "empresas_urbanova.csv");
+      const freeCsv = path.join(TOOL_DIR, "output", "empresas_urbanova_FINAL.csv");
+      const legacyCsv = path.join(TOOL_DIR, "output", "empresas_urbanova.csv");
+      const csvPath = fs.existsSync(freeCsv) ? freeCsv : legacyCsv;
       if (!fs.existsSync(csvPath)) {
         wsSend(ws, { type: "line", data: "CSV ainda nao foi gerado. Rode a captura primeiro.\n" });
         wsSend(ws, { type: "menu", ...getMenu() });
@@ -318,6 +442,94 @@ wss.on("connection", (ws) => {
       return;
     }
 
+    if (action === "buscas_list") {
+      try {
+        const data = readBuscasConfig();
+        const segs = Array.isArray(data.segmentos) ? data.segmentos : [];
+        const lines = [
+          "--- config/buscas_urbanova.json ---",
+          `bairro: ${data.bairro}`,
+          `cidade: ${data.cidade}`,
+          `buscas amplas: ${data.incluir_buscas_amplas ? "sim" : "nao"}`,
+          "",
+          `segmentos (${segs.length}):`,
+          ...segs.map((s, i) => `  ${i + 1}. ${s}`),
+          "",
+        ];
+        wsSend(ws, { type: "line", data: lines.join("\n") + "\n" });
+      } catch (err) {
+        wsSend(ws, {
+          type: "line",
+          data: `Erro ao ler buscas: ${err.message || err}\n`,
+        });
+      }
+      wsSend(ws, { type: "menu", ...getMenu() });
+      wsSend(ws, { type: "ready" });
+      return;
+    }
+
+    if (action === "buscas_add") {
+      wsSend(ws, {
+        type: "expect_input",
+        expect: "buscas_add",
+        prompt:
+          "Digite termos separados por VIRGULA (ex: chaveiro, serralheria).\nLinha vazia = cancelar.",
+      });
+      wsSend(ws, { type: "ready" });
+      return;
+    }
+
+    if (action === "buscas_remove") {
+      wsSend(ws, {
+        type: "expect_input",
+        expect: "buscas_remove",
+        prompt:
+          "Digite o(s) termo(s) exatos a remover (virgula = varios).\nLinha vazia = cancelar.",
+      });
+      wsSend(ws, { type: "ready" });
+      return;
+    }
+
+    if (action === "buscas_bairro") {
+      wsSend(ws, {
+        type: "expect_input",
+        expect: "buscas_bairro",
+        prompt: "Novo bairro (texto livre).\nLinha vazia = cancelar.",
+      });
+      wsSend(ws, { type: "ready" });
+      return;
+    }
+
+    if (action === "buscas_cidade") {
+      wsSend(ws, {
+        type: "expect_input",
+        expect: "buscas_cidade",
+        prompt: "Nova cidade.\nLinha vazia = cancelar.",
+      });
+      wsSend(ws, { type: "ready" });
+      return;
+    }
+
+    if (action === "buscas_amplas") {
+      try {
+        const data = readBuscasConfig();
+        data.incluir_buscas_amplas = !Boolean(data.incluir_buscas_amplas);
+        writeBuscasConfig(data);
+        wsSend(ws, {
+          type: "line",
+          data: `Buscas amplas (empresas/comercio/servicos/lojas): ${data.incluir_buscas_amplas ? "LIGADAS" : "DESLIGADAS"}\n`,
+        });
+      } catch (err) {
+        wsSend(ws, {
+          type: "line",
+          data: `Erro: ${err.message || err}\n`,
+        });
+      }
+      wsSend(ws, { type: "menu", ...getMenu() });
+      wsSend(ws, { type: "ready" });
+      return;
+    }
+
     if (action === "logout") {
       authed = false;
       authSessions.delete(sid);
@@ -328,7 +540,12 @@ wss.on("connection", (ws) => {
     }
 
     // ─── Free pipeline actions ───────────────────────────────
-    if (action === "start_free_capture" || action === "start_free_osm_only" || action === "start_free_scraper_only") {
+    if (
+      action === "start_free_capture" ||
+      action === "start_free_osm_only" ||
+      action === "start_free_scraper_only" ||
+      action === "merge_only"
+    ) {
       const active = activeProcesses.get(ws);
       if (active) {
         wsSend(ws, { type: "line", data: "Ja existe um processo em execucao.\n" });
@@ -336,11 +553,13 @@ wss.on("connection", (ws) => {
         return;
       }
 
-      const cmd = process.platform === "win32" ? "python" : "python3";
       let args = ["pipeline_gratuito.py"];
       let modeLabel = "completo (Scraper + OSM)";
 
-      if (action === "start_free_osm_only") {
+      if (action === "merge_only") {
+        args.push("--merge-only");
+        modeLabel = "merge apenas (CSV final)";
+      } else if (action === "start_free_osm_only") {
         args.push("--skip-scraper");
         modeLabel = "apenas OpenStreetMap (rapido)";
       } else if (action === "start_free_scraper_only") {
@@ -348,10 +567,25 @@ wss.on("connection", (ws) => {
         modeLabel = "apenas Google Maps Scraping";
       }
 
-      wsSend(ws, { type: "line", data: `🆓 Iniciando captura GRATUITA - modo ${modeLabel}\n` });
-      wsSend(ws, { type: "line", data: "Isso pode levar alguns minutos. Aguarde...\n" });
+      if (action !== "merge_only") {
+        const buscasJson = path.join(TOOL_DIR, "config", "buscas_urbanova.json");
+        if (fs.existsSync(buscasJson)) {
+          args.push("--buscas-config", buscasJson);
+        }
+      }
 
-      const proc = spawn(cmd, args, { cwd: TOOL_DIR, env: process.env, shell: false });
+      if (action === "merge_only") {
+        wsSend(ws, {
+          type: "line",
+          data: `🧩 Gerando CSV final (${modeLabel}) a partir dos arquivos em output/...\n`,
+        });
+        wsSend(ws, { type: "line", data: "Leva poucos segundos.\n" });
+      } else {
+        wsSend(ws, { type: "line", data: `🆓 Iniciando captura GRATUITA - modo ${modeLabel}\n` });
+        wsSend(ws, { type: "line", data: "Isso pode levar alguns minutos. Aguarde...\n" });
+      }
+
+      const proc = spawn(PYTHON_BIN, args, { cwd: TOOL_DIR, env: process.env, shell: false });
       activeProcesses.set(ws, proc);
       let stdoutBuffer = "";
       let stderrBuffer = "";
@@ -414,7 +648,6 @@ wss.on("connection", (ws) => {
         return;
       }
 
-      const cmd = process.platform === "win32" ? "python" : "python3";
       const args =
         action === "run_test"
           ? ["validar_maps_key.py", "--api-key", key]
@@ -425,7 +658,7 @@ wss.on("connection", (ws) => {
           : "Google Places API + Overpass (execucao full)";
       wsSend(ws, { type: "line", data: `💳 Estou indo consultar a API paga: ${apiName}\n` });
 
-      const proc = spawn(cmd, args, { cwd: TOOL_DIR, env: process.env, shell: false });
+      const proc = spawn(PYTHON_BIN, args, { cwd: TOOL_DIR, env: process.env, shell: false });
       activeProcesses.set(ws, proc);
       let stdoutBuffer = "";
       let stderrBuffer = "";
@@ -480,7 +713,15 @@ wss.on("connection", (ws) => {
   ws.on("close", () => {
     authSessions.delete(sid);
     const proc = activeProcesses.get(ws);
-    if (proc && !proc.killed) proc.kill();
+    // Nao matar o pipeline ao fechar a aba: o scrape pode levar horas e a Fase 4 (CSV final)
+    // so roda depois; matar aqui deixava empresas_urbanova_scraper.csv novo e FINAL antigo.
+    if (proc && !proc.killed) {
+      try {
+        proc.unref();
+      } catch (_e) {
+        /* ignore */
+      }
+    }
     activeProcesses.delete(ws);
   });
 });

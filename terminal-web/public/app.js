@@ -14,6 +14,8 @@ let sid = "";
 let outputLog = "";
 let inMenu = false;
 let menuRendered = false;
+/** aguardando linha de texto (ex.: termos de busca) */
+let inputExpect = null;
 
 function setBusy(v) {
   busy = v;
@@ -88,7 +90,19 @@ function connectSocket() {
       menuRendered = false;
       menuOptions = [];
       menuIndex = 0;
+      inputExpect = null;
       term.write("\r\nusuario> ");
+    }
+    if (msg.type === "expect_input") {
+      inMenu = false;
+      menuRendered = false;
+      menuOptions = [];
+      menuIndex = 0;
+      inputExpect = msg.expect || null;
+      const p = String(msg.prompt || "Digite:").replace(/\n/g, "\r\n");
+      term.write("\r\n" + p + "\r\n");
+      term.write(">> ");
+      return;
     }
     if (msg.type === "menu") {
       inMenu = true;
@@ -99,6 +113,9 @@ function connectSocket() {
     }
     if (msg.type === "ready") {
       setBusy(false);
+      if (inputExpect) {
+        return;
+      }
       if (!authenticated && authState === "username") {
         // ja imprime no auth_fail/boot
       } else if (!inMenu) {
@@ -132,6 +149,38 @@ function setupTerminal() {
 
   term.onData((data) => {
     if (busy) return;
+
+    if (authenticated && inputExpect && !inMenu) {
+      if (data === "\r") {
+        const cmd = currentLine.trim();
+        currentLine = "";
+        const kind = inputExpect;
+        inputExpect = null;
+        term.write("\r\n");
+        if (ws && ws.readyState === 1) {
+          if (cmd === "") {
+            ws.send(JSON.stringify({ type: "input_cancel" }));
+          } else {
+            ws.send(JSON.stringify({ type: "input", expect: kind, value: cmd }));
+          }
+          setBusy(true);
+        }
+        return;
+      }
+      if (data === "\u007f") {
+        if (currentLine.length > 0) {
+          currentLine = currentLine.slice(0, -1);
+          term.write("\b \b");
+        }
+        return;
+      }
+      if (/[^\x00-\x1F\x7F]/.test(data)) {
+        currentLine += data;
+        term.write(data);
+      }
+      return;
+    }
+
     if (inMenu && authenticated) {
       if (data === "\u001b[A") {
         menuIndex = (menuIndex - 1 + menuOptions.length) % menuOptions.length;
@@ -182,7 +231,7 @@ function setupTerminal() {
       }
       return;
     }
-    if (/[\x20-\x7E]/.test(data)) {
+    if (/[^\x00-\x1F\x7F]/.test(data)) {
       currentLine += data;
       if (!authenticated && authState === "password") {
         term.write("*");

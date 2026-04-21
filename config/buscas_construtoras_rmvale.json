@@ -1,0 +1,39 @@
+{
+  "bairros": [
+    ""
+  ],
+  "cidades": [
+    "São José dos Campos - SP",
+    "Jacareí - SP",
+    "Taubaté - SP",
+    "Caçapava - SP",
+    "Pindamonhangaba - SP",
+    "Tremembé - SP",
+    "Aparecida - SP",
+    "Guaratinguetá - SP",
+    "Lorena - SP",
+    "Cruzeiro - SP",
+    "Cachoeira Paulista - SP",
+    "Roseira - SP",
+    "Potim - SP",
+    "Canas - SP",
+    "Piquete - SP",
+    "Lavrinhas - SP"
+  ],
+  "incluir_buscas_amplas": false,
+  "segmentos": [
+    "construtora",
+    "construtora e incorporadora",
+    "incorporadora imobiliária",
+    "empreiteira",
+    "construção civil",
+    "engenharia civil",
+    "empresa de terraplenagem",
+    "pavimentação",
+    "concreto usinado",
+    "locação de equipamentos para construção",
+    "andaime",
+    "locação de máquinas"
+  ]
+}
+

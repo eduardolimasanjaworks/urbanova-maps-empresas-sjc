@@ -181,7 +181,22 @@ def main() -> None:
     parser.add_argument("--skip-vias", action="store_true", help="Pular extração de vias")
     parser.add_argument("--max-scroll", type=int, default=60, help="Max scrolls no scraper")
     parser.add_argument("--output-dir", default="output")
+    parser.add_argument(
+        "--buscas-config",
+        type=Path,
+        default=None,
+        help="JSON de segmentos (repassado ao scraper; default: config/buscas_urbanova.json)",
+    )
+    parser.add_argument(
+        "--merge-only",
+        action="store_true",
+        help="Só gera CSV final a partir dos CSV já em output/ (pula vias, OSM e scraper)",
+    )
     args = parser.parse_args()
+    if args.merge_only:
+        args.skip_vias = True
+        args.skip_osm = True
+        args.skip_scraper = True
 
     root = Path(".").resolve()
     out = Path(args.output_dir)
@@ -216,15 +231,15 @@ def main() -> None:
     # ─── Fase 3: Google Maps Scraper ──────────────────────────────
     if not args.skip_scraper:
         print("\n🕷️  FASE 3: Scraping Google Maps (gratuito)...")
-        res = run_script(
-            [
-                "scraper_google_maps.py",
-                "--headless",
-                "--max-scroll", str(args.max_scroll),
-                "--output-dir", args.output_dir,
-            ],
-            cwd=root,
-        )
+        scraper_cmd = [
+            "scraper_google_maps.py",
+            "--headless",
+            "--max-scroll", str(args.max_scroll),
+            "--output-dir", args.output_dir,
+        ]
+        if args.buscas_config is not None:
+            scraper_cmd.extend(["--buscas-config", str(args.buscas_config.resolve())])
+        res = run_script(scraper_cmd, cwd=root)
         phases.append({"fase": "scraper_gmaps", "exit_code": res["exit_code"]})
         if res["exit_code"] != 0:
             print("⚠️  Scraper falhou (continuando com dados disponíveis...)")

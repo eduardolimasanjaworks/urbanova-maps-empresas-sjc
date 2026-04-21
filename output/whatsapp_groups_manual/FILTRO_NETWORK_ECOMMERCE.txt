@@ -1,0 +1,18 @@
+Resumo do filtro (heurística por URL das páginas de origem)
+
+1) groups_br_network_ecommerce_ranked.txt (+ .json)
+   - Removeu 143 links cujo rastro vinha de páginas com slugs típicos de achadinho/cupom/figurinha/doação etc.
+   - Sobraram 433 links ordenados por "melhor sinal na URL de origem".
+   - Atenção: quase todos os links restantes têm score 0 na URL (listas genéricas não carregam palavras como dropshipping/fornecedor no path).
+   - O único com sinal forte na URL do crawl atual foi o grupo ligado a "empreendedorismo digital" no grupodewhats.com.
+
+2) groups_br_network_ecommerce_high_confidence.txt
+   - Critério mais rígido (score >= 2.5 só pela URL): hoje só 1 link passa sem enriquecer com título.
+
+3) enrich_whatsapp_titles.py (opcional)
+   - Tentativa de classificar pelo og:title do convite; neste ambiente o WhatsApp respondeu 429 para todas as amostras (bloqueio/rate limit).
+   - Para usar aí no seu PC: rode com --sleep-sec maior (ex.: 6–10) e lotes pequenos.
+
+Próximo passo recomendado para mais "network ecommerce" de verdade:
+- Semear o crawl com mais páginas cujo slug tenha: fornecedores, dropshipping, afiliados, marketing-digital, empreendedorismo, b2b, atacado, revenda.
+- Evitar páginas gigantes tipo "grupo-de-vendas-whatsapp" como única fonte.

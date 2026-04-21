@@ -1,0 +1,12 @@
+{
+  "total_unico": 0,
+  "total_candidatos_extraidos": 0,
+  "duplicados_removidos": 0,
+  "visitadas": 0,
+  "erros": 0,
+  "por_engine": {},
+  "por_keyword": {},
+  "dorks_consideradas": 40,
+  "tempo_execucao_segundos": 21.99,
+  "target": 50
+}

@@ -1,32 +1,23 @@
 {
-  "timestamp_unix": 1775342549,
+  "timestamp_unix": 1775398073,
   "metodo": "pipeline_gratuito_multi_fonte",
   "custo_total": "R$ 0,00",
-  "tempo_execucao_segundos": 25.9,
-  "fases": [
-    {
-      "fase": "vias_osm",
-      "exit_code": 0
-    },
-    {
-      "fase": "pois_osm",
-      "exit_code": 0
-    }
-  ],
+  "tempo_execucao_segundos": 0.1,
+  "fases": [],
   "fontes": {
-    "google_maps_scraper": 0,
+    "google_maps_scraper": 1112,
     "osm_overpass": 71
   },
   "resultados": {
-    "total_unificado": 67,
-    "confirmados_urbanova": 24,
-    "arredores": 43
+    "total_unificado": 1179,
+    "confirmados_urbanova": 286,
+    "arredores": 893
   },
   "cobertura": {
-    "com_telefone_pct": 38.81,
-    "com_horario_pct": 14.93,
-    "com_website_pct": 34.33,
-    "com_email_pct": 1.49
+    "com_telefone_pct": 87.7,
+    "com_horario_pct": 77.35,
+    "com_website_pct": 65.31,
+    "com_email_pct": 0.08
   },
   "arquivos_finais": [
     "output/empresas_urbanova_FINAL.csv",

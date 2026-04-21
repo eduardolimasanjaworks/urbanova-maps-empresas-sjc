@@ -22,7 +22,68 @@ import time
 import hashlib
 from dataclasses import dataclass, field, asdict
 from pathlib import Path
-from typing import Dict, List, Optional, Tuple
+from typing import Any, Dict, List, Optional, Tuple
+
+
+def buscas_config_default_path() -> Path:
+    return Path(__file__).resolve().parent / "config" / "buscas_urbanova.json"
+
+
+def _as_str_list(value: Any, *, allow_empty: bool = False) -> List[str]:
+    if value is None:
+        return []
+    if isinstance(value, list):
+        out: List[str] = []
+        for item in value:
+            s_raw = "" if item is None else str(item)
+            s = s_raw.strip()
+            if s:
+                out.append(s)
+            elif allow_empty:
+                # "" pode ser significativo (ex.: bairros=[""] => busca na cidade toda)
+                out.append("")
+        return out
+    s = str(value).strip()
+    return [s] if s else []
+
+
+def load_buscas_arquivo(path: Path) -> Tuple[List[str], List[str], bool, List[str]]:
+    """Lê JSON de buscas: bairros, cidades, flag amplas, segmentos.
+
+    Compatível com o formato antigo:
+      - "bairro": "Urbanova"
+      - "cidade": "São José dos Campos"
+
+    E com o formato novo (lista):
+      - "bairros": ["Urbanova", "Jardim Aquarius"]
+      - "cidades": ["São José dos Campos", "Taubaté"]
+    """
+    if not path.exists():
+        raise SystemExit(
+            f"Arquivo de buscas não encontrado: {path}\n"
+            "Crie com: python3 gerenciar_buscas.py init\n"
+            "Ou edite o JSON manualmente (chave \"segmentos\": lista de termos)."
+        )
+    data: Dict[str, Any] = json.loads(path.read_text(encoding="utf-8"))
+
+    bairros = _as_str_list(data.get("bairros"), allow_empty=True)
+    if not bairros:
+        bairros = _as_str_list(data.get("bairro", "Urbanova"), allow_empty=True)
+
+    cidades = _as_str_list(data.get("cidades"))
+    if not cidades:
+        cidades = _as_str_list(data.get("cidade", "São José dos Campos"))
+
+    amplas = bool(data.get("incluir_buscas_amplas", True))
+    raw = data.get("segmentos", [])
+    if not isinstance(raw, list):
+        raise SystemExit(f'"{path}" inválido: "segmentos" deve ser uma lista.')
+    segmentos: List[str] = []
+    for item in raw:
+        s = str(item).strip()
+        if s:
+            segmentos.append(s)
+    return bairros, cidades, amplas, segmentos
 
 
 @dataclass
@@ -66,6 +127,7 @@ def scrape_google_maps(
     max_scroll: int = 60,
     slow_mo: int = 50,
     scroll_pause_ms: int = 1500,
+    details_limit: Optional[int] = None,
 ) -> List[Business]:
     """
     Scrape Google Maps search results using Playwright.
@@ -222,12 +284,20 @@ def scrape_google_maps(
         print(f"\n📋 Total único após descoberta: {len(businesses_list)}")
         print("🔍 Extraindo detalhes de cada empresa...")
 
-        for idx, biz in enumerate(businesses_list):
+        if details_limit is not None and details_limit > 0:
+            businesses_for_details = businesses_list[:details_limit]
+        else:
+            businesses_for_details = businesses_list
+
+        if details_limit is not None and details_limit > 0 and details_limit < len(businesses_list):
+            print(f"  ℹ Limitando detalhes para {details_limit}/{len(businesses_list)} empresas (para acelerar).")
+
+        for idx, biz in enumerate(businesses_for_details):
             if not biz.google_maps_url:
                 continue
             try:
                 if (idx + 1) % 10 == 0 or idx == 0:
-                    print(f"  Detalhes: {idx+1}/{len(businesses_list)}")
+                    print(f"  Detalhes: {idx+1}/{len(businesses_for_details)}")
 
                 page.goto(biz.google_maps_url, wait_until="domcontentloaded", timeout=20000)
                 time.sleep(2)
@@ -319,65 +389,31 @@ def scrape_google_maps(
     return list(all_businesses.values())
 
 
-def build_search_queries(
-    bairro: str = "Urbanova",
-    cidade: str = "São José dos Campos",
-) -> List[str]:
-    """Build comprehensive search queries for Google Maps."""
-    segments = [
-        "restaurante",
-        "lanchonete",
-        "cafeteria",
-        "padaria",
-        "mercado",
-        "supermercado",
-        "farmácia",
-        "clínica",
-        "dentista",
-        "médico",
-        "academia",
-        "escola",
-        "faculdade",
-        "advocacia",
-        "escritório",
-        "contabilidade",
-        "imobiliária",
-        "pet shop",
-        "veterinário",
-        "salão de beleza",
-        "barbearia",
-        "auto elétrica",
-        "mecânica",
-        "posto de gasolina",
-        "loja",
-        "material de construção",
-        "pizzaria",
-        "hamburgueria",
-        "igreja",
-        "lavanderia",
-        "hotel",
-        "pousada",
-        "banco",
-        "lotérica",
-        "papelaria",
-        "ótica",
-        "laboratório",
-        "fisioterapia",
-        "psicólogo",
-        "nutricionista",
-        "coworking",
-        "estacionamento",
-    ]
+def build_search_queries(config_path: Optional[Path] = None) -> List[str]:
+    """Monta buscas a partir de config/buscas_urbanova.json (segmentos + opcional amplas)."""
+    path = config_path or buscas_config_default_path()
+    bairros, cidades, amplas, segmentos = load_buscas_arquivo(path)
 
-    queries = []
-    for seg in segments:
-        queries.append(f"{seg} {bairro} {cidade}")
+    queries: List[str] = []
+    seen: set[str] = set()
+    for cidade in cidades:
+        for bairro in (bairros or [""]):
+            for seg in segmentos:
+                parts = [seg, bairro, cidade]
+                q = " ".join(p.strip() for p in parts if p and p.strip())
+                if q not in seen:
+                    seen.add(q)
+                    queries.append(q)
 
-    # Generic broad searches
-    queries.append(f"empresas {bairro} {cidade}")
-    queries.append(f"comércio {bairro} {cidade}")
-    queries.append(f"serviços {bairro} {cidade}")
-    queries.append(f"lojas {bairro} {cidade}")
+    if amplas:
+        for cidade in cidades:
+            for bairro in (bairros or [""]):
+                for broad_prefix in ("empresas", "comércio", "serviços", "lojas"):
+                    parts = [broad_prefix, bairro, cidade]
+                    broad = " ".join(p.strip() for p in parts if p and p.strip())
+                    if broad not in seen:
+                        seen.add(broad)
+                        queries.append(broad)
 
     return queries
 
@@ -410,14 +446,30 @@ def main() -> None:
     parser.add_argument("--slow-mo", type=int, default=50, help="Slow motion do browser (ms)")
     parser.add_argument("--output-dir", default="output", help="Diretório de saída")
     parser.add_argument("--skip-details", action="store_true", help="Pular coleta de detalhes individuais")
+    parser.add_argument(
+        "--details-limit",
+        type=int,
+        default=0,
+        help="Limita quantas empresas terão a fase de detalhes (0 = sem limite; ignora se --skip-details).",
+    )
+    parser.add_argument(
+        "--buscas-config",
+        type=Path,
+        default=None,
+        help="JSON com segmentos (default: config/buscas_urbanova.json)",
+    )
     args = parser.parse_args()
 
     out_dir = Path(args.output_dir)
     out_dir.mkdir(parents=True, exist_ok=True)
 
-    queries = build_search_queries()
+    queries = build_search_queries(config_path=args.buscas_config)
     print(f"🚀 Iniciando scraper Google Maps ({len(queries)} buscas)")
     print(f"   Modo: {'headless' if args.headless else 'com interface'}")
+
+    details_limit: Optional[int] = None
+    if not args.skip_details and args.details_limit and args.details_limit > 0:
+        details_limit = int(args.details_limit)
 
     businesses = scrape_google_maps(
         queries=queries,
@@ -425,6 +477,7 @@ def main() -> None:
         max_scroll=args.max_scroll,
         slow_mo=args.slow_mo,
         scroll_pause_ms=args.scroll_pause_ms,
+        details_limit=details_limit,
     )
 
     # Filter for Urbanova area

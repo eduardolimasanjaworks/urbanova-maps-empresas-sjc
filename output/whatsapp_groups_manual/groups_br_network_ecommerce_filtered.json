@@ -1,0 +1,26 @@
+[
+  {
+    "url": "https://chat.whatsapp.com/KPx1TuCwzsP39jyBrnlJMO",
+    "network_ecommerce_score": 8.5,
+    "best_source_score": 8.5,
+    "unique_source_pages": 1,
+    "positive_hits": [
+      "digital",
+      "empreendedor",
+      "empreendedorismo"
+    ],
+    "negative_hits": [],
+    "per_source_top": [
+      {
+        "url": "https://grupodewhats.com/grupo-de-empreendedorismo-digital",
+        "score": 8.5,
+        "pos": [
+          "empreendedor",
+          "empreendedorismo",
+          "digital"
+        ],
+        "neg": []
+      }
+    ]
+  }
+]
