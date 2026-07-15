@@ -1,0 +1,19 @@
+{
+  "timestamp_unix": 1783348262,
+  "metodo": "scraper_google_maps_gratuito",
+  "custo": "R$ 0,00",
+  "total_empresas_descobertas": 20,
+  "empresas_urbanova_confirmadas": 1,
+  "empresas_arredores": 19,
+  "cobertura": {
+    "com_telefone_pct": 25.0,
+    "com_horario_pct": 15.0,
+    "com_website_pct": 25.0
+  },
+  "queries_executadas": 1,
+  "arquivos": [
+    "output/empresas_urbanova_scraper.csv",
+    "output/empresas_urbanova_scraper_filtrada.csv",
+    "output/empresas_scraper_descoberta.jsonl"
+  ]
+}

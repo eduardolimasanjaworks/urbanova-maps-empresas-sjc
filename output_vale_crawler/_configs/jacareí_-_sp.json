@@ -1,0 +1,42 @@
+{
+  "bairros": [
+    ""
+  ],
+  "cidades": [
+    "Jacareí - SP"
+  ],
+  "incluir_buscas_amplas": true,
+  "segmentos": [
+    "clube",
+    "clube de campo",
+    "clube recreativo",
+    "clube social",
+    "grêmio recreativo",
+    "associação recreativa",
+    "associação esportiva",
+    "centro esportivo",
+    "quadra esportiva",
+    "SESI",
+    "SESC",
+    "escolinha de futebol",
+    "escola de futebol",
+    "futebol society",
+    "escolinha de natação",
+    "escola de natação",
+    "natação",
+    "academia de natação",
+    "escola",
+    "escola municipal",
+    "escola particular",
+    "colégio",
+    "colégio particular",
+    "creche",
+    "escola infantil",
+    "condomínio",
+    "condomínio residencial",
+    "administradora de condomínios",
+    "síndico profissional",
+    "associação de moradores",
+    "portaria condomínio"
+  ]
+}

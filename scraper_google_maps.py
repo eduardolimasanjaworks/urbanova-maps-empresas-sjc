@@ -128,6 +128,7 @@ def scrape_google_maps(
     slow_mo: int = 50,
     scroll_pause_ms: int = 1500,
     details_limit: Optional[int] = None,
+    autosave_path: Optional[Path] = None,
 ) -> List[Business]:
     """
     Scrape Google Maps search results using Playwright.
@@ -136,6 +137,17 @@ def scrape_google_maps(
     from playwright.sync_api import sync_playwright
 
     all_businesses: Dict[str, Business] = {}
+
+    def autosave(stage: str) -> None:
+        if autosave_path is None:
+            return
+        autosave_path.parent.mkdir(parents=True, exist_ok=True)
+        businesses = list(all_businesses.values())
+        export_csv(autosave_path, businesses)
+        partial_path = autosave_path.with_suffix(".partial.csv")
+        export_csv(partial_path, businesses)
+        with_phone = sum(1 for biz in businesses if biz.telefone)
+        print(f"  💾 Autosave ({stage}): {len(businesses)} registros, {with_phone} com telefone")
 
     with sync_playwright() as p:
         browser = p.chromium.launch(headless=headless, slow_mo=slow_mo)
@@ -172,6 +184,7 @@ def scrape_google_maps(
                     page.wait_for_selector("[role='feed'], div.m6QErb", timeout=10000)
                 except Exception:
                     print(f"  ⚠ Nenhum feed de resultados encontrado para: {query}")
+                    autosave(f"busca {query_idx+1}/{len(queries)} sem resultados")
                     continue
 
                 # Scroll to load all results
@@ -275,8 +288,11 @@ def scrape_google_maps(
                         print(f"  ⚠ Erro ao extrair resultado {i}: {e}")
                         continue
 
+                autosave(f"busca {query_idx+1}/{len(queries)}")
+
             except Exception as e:
                 print(f"  ❌ Erro na busca '{query}': {e}")
+                autosave(f"erro busca {query_idx+1}/{len(queries)}")
                 continue
 
         # Phase 2: Get details for each business by visiting their page
@@ -379,9 +395,11 @@ def scrape_google_maps(
 
                 # Update place_id with better info
                 biz.place_id = generate_place_id(biz.nome, biz.endereco or biz.google_maps_url)
+                autosave(f"detalhes {idx+1}/{len(businesses_for_details)}")
 
             except Exception as e:
                 print(f"  ⚠ Erro detalhes '{biz.nome}': {e}")
+                autosave(f"erro detalhes {idx+1}/{len(businesses_for_details)}")
                 continue
 
         browser.close()
@@ -458,12 +476,18 @@ def main() -> None:
         default=None,
         help="JSON com segmentos (default: config/buscas_urbanova.json)",
     )
+    parser.add_argument("--query-offset", type=int, default=0, help="Pula N buscas do início")
+    parser.add_argument("--query-limit", type=int, default=0, help="Limita quantas buscas serão executadas (0 = todas)")
     args = parser.parse_args()
 
     out_dir = Path(args.output_dir)
     out_dir.mkdir(parents=True, exist_ok=True)
 
     queries = build_search_queries(config_path=args.buscas_config)
+    if args.query_offset > 0:
+        queries = queries[args.query_offset:]
+    if args.query_limit > 0:
+        queries = queries[:args.query_limit]
     print(f"🚀 Iniciando scraper Google Maps ({len(queries)} buscas)")
     print(f"   Modo: {'headless' if args.headless else 'com interface'}")
 
@@ -478,6 +502,7 @@ def main() -> None:
         slow_mo=args.slow_mo,
         scroll_pause_ms=args.scroll_pause_ms,
         details_limit=details_limit,
+        autosave_path=out_dir / "empresas_urbanova_scraper.csv",
     )
 
     # Filter for Urbanova area

@@ -1,0 +1,32 @@
+{
+  "bairros": [
+    ""
+  ],
+  "cidades": [
+    "Bragança Paulista - SP"
+  ],
+  "incluir_buscas_amplas": false,
+  "segmentos": [
+    "clube de campo",
+    "escolinha de futebol",
+    "escola de futebol",
+    "escolinha de natação",
+    "escola de natação",
+    "grêmio recreativo",
+    "associação desportiva classista",
+    "ADC",
+    "SESI",
+    "SESC",
+    "escola municipal",
+    "EMEF",
+    "EMEI",
+    "escola particular",
+    "colégio particular",
+    "creche particular",
+    "condomínio residencial",
+    "condomínio",
+    "administradora de condomínios",
+    "síndico profissional",
+    "associação de moradores"
+  ]
+}
